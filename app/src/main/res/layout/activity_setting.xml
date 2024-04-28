@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.15"
+        android:background="#7F00FF" />
+
+    <TextView
+        android:id="@+id/settingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.01"
+        android:text="@string/settings"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/languageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:layout_weight="0.01"
+        android:text="@string/lang"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonLanguageEN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:text="@string/langEN"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/buttonLanguageCN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:text="@string/langCN"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonLanguageBA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:text="@string/langIN"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/buttonLanguageTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:text="@string/langTA"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewQRcode"
+        android:layout_width="250dp"
+        android:layout_height="230dp"
+        android:layout_weight="0"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/qr_code"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/buttonHomePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="0"
+        android:text="@string/homePage"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/buttonKYDZWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="0"
+        android:text="@string/KYDZWeb"
+        android:textSize="26sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.1"
+        android:background="#7F00FF" />
+
+</LinearLayout>

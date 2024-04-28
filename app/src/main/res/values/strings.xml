@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">NostalgiaMatching(FYP2024)</string>
+    <!-- Gabriel -->
+    <!-- HaiXuan-->
+    <string name="settings">Settings</string>
+    <string name="lang">Language</string>
+    <string name="langEN">English</string>
+    <string name="langCN">中文</string>
+    <string name="langIN">Bahasa</string>
+    <string name="langTA">தமிழ்</string>
+    <string name="homePage">Home Page</string>
+    <string name="KYDZWeb">KYDZ Website</string>
+    <!-- Cheng En-->
+    <!-- Jin Yan-->
+
 </resources>
