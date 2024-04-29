@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
         android:layout_weight="0.01"
-        android:text="Nostalgia Matching"
+        android:text="@strings/Title"
         android:textSize="32sp" />
     <!-- Increased font size -->
 
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_weight="0.2"
-        android:text="Easy"
+        android:text="@strings/easy"
         android:textSize="32sp"/>
 
     <Button
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_weight="0.2"
-        android:text="Medium"
+        android:text="@string/medium"
         android:textSize="32sp"/>
 
     <Button
@@ -61,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_weight="0.2"
-        android:text="Hard"
+        android:text="@string/hard"
         android:textSize="32sp"/>
 
     <!-- Buttons for Settings and How to Play -->
@@ -78,7 +78,7 @@
         android:id="@+id/howToPlayButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="How to Play"
+        android:text="@string/instructions"
         android:layout_marginTop="16dp"
         android:layout_weight="0.1"
         android:textSize="32sp"/>
