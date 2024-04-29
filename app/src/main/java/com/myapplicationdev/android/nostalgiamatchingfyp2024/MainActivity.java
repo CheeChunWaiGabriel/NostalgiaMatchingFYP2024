@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
         easyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle easy difficulty selection
+                Intent intent = new Intent(MainActivity.this, EasyActivity.class);
+                startActivity(intent);
             }
         });
 
