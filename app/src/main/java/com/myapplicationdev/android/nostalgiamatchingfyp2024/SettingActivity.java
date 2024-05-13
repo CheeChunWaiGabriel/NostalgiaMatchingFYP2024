@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.graphics.Color;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,6 +26,7 @@ public class SettingActivity extends AppCompatActivity {
 
         btnHomePage = findViewById(R.id.buttonHomePage);
         btnKYDZweb = findViewById(R.id.buttonKYDZWeb);
+
 
         btnHomePage.setOnClickListener(new View.OnClickListener() {
             @Override

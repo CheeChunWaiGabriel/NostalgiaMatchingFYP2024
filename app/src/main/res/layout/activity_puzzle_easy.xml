@@ -45,32 +45,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:id="@+id/imageButtonFlask"
-                    android:layout_width="140dp"
-                    android:layout_height="170dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:background="@color/white"
-                    android:contentDescription="@string/image_button_flask_description"
-                    android:scaleType="fitCenter"
-                    android:visibility="visible"
-                    app:srcCompat="@drawable/flask" />/>
-
-                <ImageButton
-                    android:id="@+id/imageButtonLaksa"
-                    android:layout_width="140dp"
-                    android:layout_height="170dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@color/white"
-                    android:contentDescription="@string/image_button_laksa_description"
-                    android:scaleType="centerInside"
-                    app:srcCompat="@drawable/laksa" />
-
-            </LinearLayout>
+                android:orientation="horizontal"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
