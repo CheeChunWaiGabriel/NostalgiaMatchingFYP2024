@@ -54,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
         howToPlayButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Open how-to-play activity
+                Intent intent = new Intent(MainActivity.this, HowToPlayActivity.class);
+                startActivity(intent);
             }
         });
     }
