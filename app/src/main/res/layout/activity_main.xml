@@ -4,23 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
-    <View
-    android:layout_width="match_parent"
-    android:layout_height="1dp"
-    android:background="#7F00FF"
-    android:layout_weight="0.4"/>
 
-    <!-- Company Logo -->
-    <!--<ImageView
-        android:id="@+id/logoImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.1"
-        android:src="@drawable/company_logo" />
--->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_weight="0.05"
+        android:background="@color/bgPurple"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/logo" />
+    </LinearLayout>
 
     <!-- Title -->
     <TextView
@@ -34,64 +36,86 @@
     <!-- Increased font size -->
 
     <!-- Buttons for Difficulty Selection -->
-
-
-
+    <!-- Buttons for Difficulty Selection -->
     <Button
         android:id="@+id/easyButton"
-        android:layout_width="237dp"
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_weight="0.2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="0"
         android:text="@string/easy"
-        android:textSize="32sp"
-        android:backgroundTint="@color/orange"/>
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        android:background="@drawable/orange_btn"
+        android:layout_gravity="center_horizontal" />
 
     <Button
         android:id="@+id/mediumButton"
-        android:layout_width="225dp"
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_weight="0.2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="0"
         android:text="@string/medium"
-        android:textSize="32sp"
-        android:backgroundTint="@color/orange"/>
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        android:background="@drawable/orange_btn"
+        android:layout_gravity="center_horizontal" />
 
     <Button
         android:id="@+id/hardButton"
-        android:layout_width="226dp"
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_weight="0.2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="0"
         android:text="@string/hard"
-        android:textSize="32sp"
-        android:backgroundTint="@color/orange"/>
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        android:background="@drawable/orange_btn"
+        android:layout_gravity="center_horizontal" />
 
     <!-- Buttons for Settings and How to Play -->
     <Button
         android:id="@+id/settingsButton"
-        android:layout_width="211dp"
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_weight="0.1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="0"
         android:text="@string/settings"
-        android:textSize="32sp"
-        android:backgroundTint="@color/orange"/>
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        android:background="@drawable/orange_btn"
+        android:layout_gravity="center_horizontal" />
 
     <Button
         android:id="@+id/howToPlayButton"
-        android:layout_width="wrap_content"
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="0"
         android:text="@string/instructions"
-        android:layout_marginTop="16dp"
-        android:layout_weight="0.1"
-        android:textSize="32sp"
-        android:backgroundTint="@color/orange"/>
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        android:background="@drawable/orange_btn"
+        android:layout_gravity="center_horizontal" />
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#7F00FF"
         android:layout_weight="0.1"
- />
+        android:background="@color/bgPurple" />
 </LinearLayout>
 

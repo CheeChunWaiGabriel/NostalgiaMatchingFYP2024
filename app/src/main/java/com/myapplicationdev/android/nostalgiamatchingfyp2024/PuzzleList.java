@@ -12,6 +12,11 @@ public class PuzzleList {
         puzzles.add("Puzzle 1");
         puzzles.add("Puzzle 2");
         puzzles.add("Puzzle 3");
+        puzzles.add("Puzzle 4");
+        puzzles.add("Puzzle 5");
+        puzzles.add("Puzzle 6");
+        puzzles.add("Puzzle 7");
+        puzzles.add("Puzzle 8");
         // Add more puzzles as needed
     }
 
