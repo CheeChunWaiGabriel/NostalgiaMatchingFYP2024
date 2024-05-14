@@ -24,37 +24,25 @@
         android:id="@+id/htpTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:layout_gravity="center_horizontal|center_vertical"
         android:layout_weight="0"
         android:paddingBottom="10dp"
-=======
-        android:layout_weight="0"
-        android:layout_gravity="center"
-        android:paddingBottom="20dp"
->>>>>>> d419f2d79d7617e0a7caf144c4b45601218bdc84
         android:text="@string/htp1"
         android:textSize="40sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-<<<<<<< HEAD
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-=======
->>>>>>> d419f2d79d7617e0a7caf144c4b45601218bdc84
         android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-=======
->>>>>>> d419f2d79d7617e0a7caf144c4b45601218bdc84
             android:orientation="vertical"
             android:paddingTop="20dp"
             android:paddingBottom="20dp">
@@ -66,128 +54,73 @@
 
                 <ImageView
                     android:id="@+id/htpStar"
-<<<<<<< HEAD
                     android:layout_width="140dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/star6" />
-=======
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/star"/>
->>>>>>> d419f2d79d7617e0a7caf144c4b45601218bdc84
 
                 <TextView
                     android:id="@+id/htp2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-<<<<<<< HEAD
                     android:layout_marginLeft="30dp"
                     android:layout_weight="5"
                     android:text="@string/htp2"
                     android:textSize="25sp"
                     android:textStyle="bold" />
-=======
-                    android:layout_weight="5"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginRight="30dp"
-                    android:text="@string/htp2"
-                    android:textSize="25sp"
-                    android:textStyle="bold"/>
->>>>>>> d419f2d79d7617e0a7caf144c4b45601218bdc84
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal">
-=======
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp">
->>>>>>> d419f2d79d7617e0a7caf144c4b45601218bdc84
 
                 <TextView
                     android:id="@+id/htp3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-<<<<<<< HEAD
                     android:text="@string/htp3"
                     android:textSize="25sp"
                     android:textStyle="bold" />
-=======
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="50dp"
-                    android:text="@string/htp3"
-                    android:textSize="25sp"
-                    android:textStyle="bold"/>
->>>>>>> d419f2d79d7617e0a7caf144c4b45601218bdc84
 
                 <ImageView
                     android:id="@+id/htpExample"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-<<<<<<< HEAD
                     app:srcCompat="@drawable/example" />
-=======
-                    app:srcCompat="@drawable/example"/>
->>>>>>> d419f2d79d7617e0a7caf144c4b45601218bdc84
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal">
-=======
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp">
->>>>>>> d419f2d79d7617e0a7caf144c4b45601218bdc84
 
                 <ImageView
                     android:id="@+id/htpCorrect"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-<<<<<<< HEAD
                     app:srcCompat="@drawable/correct" />
-=======
-                    app:srcCompat="@drawable/correct"/>
->>>>>>> d419f2d79d7617e0a7caf144c4b45601218bdc84
 
                 <TextView
                     android:id="@+id/htp4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-<<<<<<< HEAD
                     android:layout_marginLeft="10dp"
                     android:text="@string/htp4"
                     android:textSize="25sp"
                     android:textStyle="bold" />
-=======
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginRight="30dp"
-                    android:text="@string/htp4"
-                    android:textSize="25sp"
-                    android:textStyle="bold"/>
->>>>>>> d419f2d79d7617e0a7caf144c4b45601218bdc84
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal">
-=======
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp">
->>>>>>> d419f2d79d7617e0a7caf144c4b45601218bdc84
 
                 <ImageView
                     android:id="@+id/htpWrong"
@@ -199,12 +132,7 @@
                     android:id="@+id/htp5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-<<<<<<< HEAD
                     android:layout_marginLeft="20dp"
-=======
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginRight="30dp"
->>>>>>> d419f2d79d7617e0a7caf144c4b45601218bdc84
                     android:text="@string/htp5"
                     android:textSize="25sp"
                     android:textStyle="bold" />
@@ -229,12 +157,8 @@
             android:background="@drawable/orange_btn"
             android:text="@string/htp6"
             android:textColor="@android:color/black"
-<<<<<<< HEAD
             android:textSize="25sp"
             app:backgroundTint="@null" />
-=======
-            android:textSize="25sp" />
->>>>>>> d419f2d79d7617e0a7caf144c4b45601218bdc84
     </LinearLayout>
 
 </LinearLayout>
