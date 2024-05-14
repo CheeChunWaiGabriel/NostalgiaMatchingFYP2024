@@ -14,9 +14,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Initialize buttons
-        Button easyButton = findViewById(R.id.easyButton);
-        Button mediumButton = findViewById(R.id.mediumButton);
-        Button hardButton = findViewById(R.id.hardButton);
+        View easyButton = findViewById(R.id.easyBtn);
+        View mediumButton = findViewById(R.id.normalBtn);
+        View hardButton = findViewById(R.id.expertBtn);
         Button settingsButton = findViewById(R.id.settingsButton);
         Button howToPlayButton = findViewById(R.id.howToPlayButton);
 
