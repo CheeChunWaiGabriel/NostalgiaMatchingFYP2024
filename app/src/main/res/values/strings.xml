@@ -4,8 +4,7 @@
     <string name="Title">Nostalgia Matching</string>
     <string name="easy">Easy</string>
     <string name="medium">Normal</string>
-    <string name="hard">
-        Hard</string>
+    <string name="hard">Expert</string>
     <string name="instructions">How To Play</string>
     <!-- HaiXuan-->
     <string name="settings">Settings</string>
