@@ -5,37 +5,42 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <View
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_weight="0.1"
-        android:background="#7F00FF" />
+        android:layout_height="0.1dp"
+        android:layout_weight="0.15"
+        android:background="@color/bgPurple"
+        android:orientation="vertical">
 
-    <!-- Company Logo -->
-    <!--<ImageView
-        android:id="@+id/logoImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.1"
-        android:src="@drawable/company_logo" />
--->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/logo" />
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"
         android:text="@string/chooseTheme"
-        android:textSize="36sp"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <!-- First Row -->
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.1">
+        android:layout_height="450dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0.1">>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -45,33 +50,140 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"/>
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewFlask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/flask" />
+
+                <ImageView
+                    android:id="@+id/imageViewLaksa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="70dp"
+                    android:src="@drawable/laksa" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
+
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/textViewFlask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_weight="0"
+                    android:text="@string/flask"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/textViewLaska"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/laksa"
+                    android:textSize="28sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnFlask"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/orange_btn"
+                    android:text="@string/start"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/btnLaska"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/orange_btn"
+                    android:text="@string/start"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewRose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/rose" />
+
+                <ImageView
+                    android:id="@+id/imageViewDogs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/dog" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewRose"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="70dp"
                     android:layout_marginRight="80dp"
                     android:layout_weight="0"
-                    android:text="@string/flask"
-                    android:textSize="24sp" />
+                    android:text="@string/Rose"
+                    android:textSize="28sp" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/textViewDog"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="55dp"
                     android:layout_weight="0"
-                    android:text="@string/laksa"
-                    android:textSize="24sp" />
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/Dog"
+                    android:textSize="28sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -80,122 +192,233 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/buttonPuzzle1"
-                    android:layout_width="0dp"
+                    android:id="@+id/btnRose"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="@string/start" />
+                    android:background="@drawable/orange_btn"
+                    android:text="@string/start"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    app:backgroundTint="@null" />
 
                 <Button
-                    android:id="@+id/buttonPuzzle2"
-                    android:layout_width="0dp"
+                    android:id="@+id/btnDog"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="@string/start" />
+                    android:background="@drawable/orange_btn"
+                    android:text="@string/start"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    app:backgroundTint="@null" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewClogs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/clogs" />
+
+                <ImageView
+                    android:id="@+id/imageViewSpoons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="70dp"
+                    android:src="@drawable/spoon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewclogs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_weight="0"
+                    android:text="@string/Clogs"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/textViewspoon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/Spoon"
+                    android:textSize="28sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/buttonPuzzle3"
-                    android:layout_width="0dp"
+                    android:id="@+id/btnClogs"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="@string/start" />
+                    android:background="@drawable/orange_btn"
+                    android:text="@string/start"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    app:backgroundTint="@null" />
 
                 <Button
-                    android:id="@+id/buttonPuzzle4"
-                    android:layout_width="0dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="@string/start" />
+                    android:background="@drawable/orange_btn"
+                    android:text="@string/start"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewArmchair"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/armchair" />
+
+                <ImageView
+                    android:id="@+id/imageViewBirdCage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/birdcage" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/buttonPuzzle5"
-                    android:layout_width="0dp"
+                <TextView
+                    android:id="@+id/textViewArmChair"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:text="@string/start" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_weight="0"
+                    android:text="@string/Armchair"
+                    android:textSize="28sp" />
 
-                <Button
-                    android:id="@+id/buttonPuzzle6"
-                    android:layout_width="0dp"
+                <TextView
+                    android:id="@+id/textViewBirdCage"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:text="@string/start" />
-
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0"
+                    android:text="@string/Bird_Cage"
+                    android:textSize="28sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/buttonPuzzle7"
-                    android:layout_width="0dp"
+                    android:id="@+id/btnArmchair"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="@string/start" />
+                    android:background="@drawable/orange_btn"
+                    android:text="@string/start"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    app:backgroundTint="@null" />
 
                 <Button
-                    android:id="@+id/buttonPuzzle8"
-                    android:layout_width="0dp"
+                    android:id="@+id/btnBirdCage"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="@string/start" />
+                    android:background="@drawable/orange_btn"
+                    android:text="@string/start"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    app:backgroundTint="@null" />
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
 
-    <!-- Second Row -->
-
-    <!-- Second Row -->
-
-
-    <!-- Second Row -->
-    <!-- Add more rows as needed -->
 
     <Button
-        android:id="@+id/buttonStartPuzzle"
-        android:layout_width="match_parent"
+        android:id="@+id/buttonHomePage"
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/htp6" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0"
+        android:background="@drawable/orange_btn"
+        android:text="@string/homePage"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:backgroundTint="@null" />
+
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_weight="0.1"
-        android:background="#7F00FF" />
+        android:background="@color/bgPurple" />
 </LinearLayout>

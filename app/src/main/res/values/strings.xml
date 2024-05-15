@@ -31,5 +31,11 @@
     <string name="htp5">A wrong option will be denoted by a red cross and its sound effects. Good luck and have fun!</string>
     <string name="htp6">Home page</string>
     <!-- Jin Yan-->
+    <string name="Armchair">Armchair</string>
+    <string name="Bird_Cage">Bird Cage</string>
+    <string name="Rose">Rose</string>
+    <string name="Dog">Dog</string>
+    <string name="Clogs">Clogs</string>
+    <string name="Spoon">Spoon</string>
 
 </resources>
