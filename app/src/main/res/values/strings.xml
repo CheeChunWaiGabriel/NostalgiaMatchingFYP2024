@@ -30,6 +30,14 @@
     <string name="htp4">To complete the game, gather all the green ticks through the correct options.</string>
     <string name="htp5">A wrong option will be denoted by a red cross and its sound effects. Good luck and have fun!</string>
     <string name="htp6">Home page</string>
+    <string name="cutlery">Cutlery</string>
+    <string name="food">Food</string>
+    <string name="animals">Animals</string>
+    <string name="livingRoom">Living room</string>
+    <string name="flower">Flower</string>
+    <string name="scenery">Scenery</string>
+    <string name="snacks">Snacks</string>
+    <string name="householdItems">Household items</string>
     <!-- Jin Yan-->
     <string name="Armchair">Armchair</string>
     <string name="Bird_Cage">Bird Cage</string>
