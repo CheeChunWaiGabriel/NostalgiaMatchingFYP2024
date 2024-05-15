@@ -13,6 +13,9 @@
         android:theme="@style/Theme.NostalgiaMatchingFYP2024"
         tools:targetApi="31">
         <activity
+            android:name=".ExpertGame1"
+            android:exported="false" />
+        <activity
             android:name=".NormalActivity"
             android:exported="false" />
         <activity
@@ -20,7 +23,7 @@
             android:exported="false" />
         <activity
             android:name=".EasyActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".SettingActivity"
             android:exported="true" />
