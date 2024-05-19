@@ -150,7 +150,8 @@
         android:text="@string/chooseDiff"
         android:textColor="@color/black"
         android:textSize="27dp"
-        app:backgroundTint="@null" />
+        app:backgroundTint="@null"
+        android:visibility="invisible"/>
 
     <Button
         android:id="@+id/button2"
