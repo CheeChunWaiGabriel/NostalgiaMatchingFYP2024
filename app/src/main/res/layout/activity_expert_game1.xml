@@ -226,7 +226,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/buttonChooseDiff"
+        android:id="@+id/buttonResult"
         android:layout_width="260dp"
         android:layout_height="64dp"
         android:layout_gravity="center_horizontal"
@@ -240,7 +240,7 @@
         app:backgroundTint="@null" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonBack"
         android:layout_width="260dp"
         android:layout_height="64dp"
         android:layout_gravity="center_horizontal"
