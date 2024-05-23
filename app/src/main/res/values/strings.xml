@@ -21,6 +21,8 @@
     <string name="laksa">Laksa</string>
     <string name="find">Find:</string>
     <string name="chooseDiff">Choose Difficulty</string>
+    <string name="goodJob">Good Job!</string>
+    <string name="back">Back</string>
     <string name="image_button_flask_description">Flask button</string>
     <string name="image_button_laksa_description">Laksa button</string>
     <!-- Cheng En-->
