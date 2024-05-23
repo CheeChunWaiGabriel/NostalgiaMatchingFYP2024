@@ -13,7 +13,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/logoImg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
@@ -24,35 +24,47 @@
             app:srcCompat="@drawable/logo" />
 
         <ImageView
-            android:id="@+id/star_expert3.1"
+            android:id="@+id/levelStar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="1"
-            android:src="@drawable/star" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.3"
+            android:paddingBottom="20dp"
+            app:srcCompat="@drawable/star" />
 
         <ImageView
-            android:id="@+id/star_expert3.2"
+            android:id="@+id/levelStar2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="1"
-            android:src="@drawable/star" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.3"
+            android:paddingBottom="20dp"
+            app:srcCompat="@drawable/star" />
 
         <ImageView
-            android:id="@+id/star_expert3.3"
+            android:id="@+id/levelStar3"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="1"
-            android:src="@drawable/star" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.3"
+            android:paddingBottom="20dp"
+            app:srcCompat="@drawable/star" />
     </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
         android:layout_weight="0"
         android:orientation="horizontal">
 
@@ -66,38 +78,113 @@
             android:textAlignment="center"
             android:textSize="35dp" />
 
-        <ImageView
-            android:id="@+id/imageViewexpert"
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="80dp"
             android:layout_height="100dp"
             android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/blackoutline_bg"
-            android:scaleType="fitCenter"
-            app:backgroundTint="@null"
-            app:srcCompat="@drawable/parrot" />
+            android:layout_weight="1">
 
-        <ImageView
-            android:id="@+id/imageViewexpert2"
+            <ImageView
+                android:id="@+id/imageViewexpert"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/blackoutline_bg"
+                android:scaleType="fitCenter"
+                app:backgroundTint="@null"
+                app:srcCompat="@drawable/parrot" />
+
+            <ImageView
+                android:id="@+id/correctImg1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/correct"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/wrongImg1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/wrong"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="80dp"
             android:layout_height="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_weight="1"
-            android:background="@drawable/blackoutline_bg"
-            app:backgroundTint="@null"
-            app:srcCompat="@drawable/parrot" />
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
 
-        <ImageView
-            android:id="@+id/imageViewexpert3"
+            <ImageView
+                android:id="@+id/imageViewexpert2"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/blackoutline_bg"
+                app:backgroundTint="@null"
+                app:srcCompat="@drawable/parrot" />
+
+            <ImageView
+                android:id="@+id/correctImg2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/correct"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/wrongImg2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/wrong"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="80dp"
             android:layout_height="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_weight="1"
-            android:background="@drawable/blackoutline_bg"
-            app:backgroundTint="@null"
-            app:srcCompat="@drawable/parrot" />
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageViewexpert3"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/blackoutline_bg"
+                app:backgroundTint="@null"
+                app:srcCompat="@drawable/parrot" />
+
+            <ImageView
+                android:id="@+id/correctImg3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/correct"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/wrongImg3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/wrong"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -237,6 +324,7 @@
         android:text="@string/chooseDiff"
         android:textColor="@color/black"
         android:textSize="27dp"
+        android:visibility="invisible"
         app:backgroundTint="@null" />
 
     <Button
@@ -247,7 +335,7 @@
         android:layout_marginBottom="15dp"
         android:layout_weight="0"
         android:background="@drawable/orange_btn"
-        android:text="@string/htp6"
+        android:text="@string/back"
         android:textColor="@color/black"
         android:textSize="27dp"
         app:backgroundTint="@null" />
