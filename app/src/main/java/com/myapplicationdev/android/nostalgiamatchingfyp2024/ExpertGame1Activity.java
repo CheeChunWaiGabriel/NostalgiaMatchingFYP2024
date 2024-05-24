@@ -33,7 +33,8 @@ public class ExpertGame1Activity extends AppCompatActivity {
     GameRun gameRun = new GameRun();
     Drawable redBG = BGcolor.redBG(20, 10);
     Drawable greenBG = BGcolor.greenBG(20, 10);
-
+    String goodJob;
+    String tryAgain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,12 +62,16 @@ public class ExpertGame1Activity extends AppCompatActivity {
         btnEndGame = findViewById(R.id.buttonResult);
         btnBack = findViewById(R.id.buttonBack);
 
+        goodJob = getString(R.string.goodJob);
+        tryAgain = getString(R.string.tryAgain);
+
         imgBtnCorrect1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 imgBtnCorrect1.setBackground(greenBG);
                 gameRun.correctOptionFound();
                 showCorrect();
+                imgBtnCorrect1.setClickable(false);
             }
         });
         imgBtnCorrect2.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +80,7 @@ public class ExpertGame1Activity extends AppCompatActivity {
                 imgBtnCorrect2.setBackground(greenBG);
                 gameRun.correctOptionFound();
                 showCorrect();
+                imgBtnCorrect2.setClickable(false);
             }
         });
         imgBtnCorrect3.setOnClickListener(new View.OnClickListener() {
@@ -83,6 +89,7 @@ public class ExpertGame1Activity extends AppCompatActivity {
                 imgBtnCorrect3.setBackground(greenBG);
                 gameRun.correctOptionFound();
                 showCorrect();
+                imgBtnCorrect3.setClickable(false);
             }
         });
         imgBtnWrong1.setOnClickListener(new View.OnClickListener() {
@@ -128,9 +135,17 @@ public class ExpertGame1Activity extends AppCompatActivity {
             }
         });
 
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ExpertGame1Activity.this, ExpertActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
     private void showCorrect(){
-        gameRun.endGameEasy();
+        gameRun.endGameExpert();
         if (gameRun.getCorrectOption() == 1) {
             correctImg1.setVisibility(View.VISIBLE);
         }else if (gameRun.getCorrectOption() == 2) {
@@ -153,10 +168,10 @@ public class ExpertGame1Activity extends AppCompatActivity {
     private void getGameResult() {
         falseBtn();
         if (gameRun.getGameWin()) {
-            btnEndGame.setText("Good Job!");
+            btnEndGame.setText(goodJob);
             btnEndGame.setClickable(false);
         } else {
-            btnEndGame.setText("Try Again");
+            btnEndGame.setText(tryAgain);
             btnEndGame.setClickable(true);
             btnEndGame.setOnClickListener(new View.OnClickListener() {
                 @Override

@@ -26,6 +26,8 @@ public class EasyGame1Activity extends AppCompatActivity {
     GameRun gameRun = new GameRun();
     Drawable redBG = BGcolor.redBG(20, 10);
     Drawable greenBG = BGcolor.greenBG(20, 10);
+    String goodJob;
+    String tryAgain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,9 @@ public class EasyGame1Activity extends AppCompatActivity {
 
         btnEndGame = findViewById(R.id.buttonResult);
         btnBack = findViewById(R.id.buttonBack);
+
+        goodJob = getString(R.string.goodJob);
+        tryAgain = getString(R.string.tryAgain);
 
         imgBtnCorrect1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -109,7 +114,7 @@ public class EasyGame1Activity extends AppCompatActivity {
 
     private void getGameResult() {
         if (gameRun.getGameWin()) {
-            btnEndGame.setText("Good Job!");
+            btnEndGame.setText(goodJob);
             btnEndGame.setClickable(false);
             imgBtnCorrect1.setClickable(false);
             imgBtnCorrect2.setClickable(false);
@@ -120,7 +125,7 @@ public class EasyGame1Activity extends AppCompatActivity {
             imgBtnCorrect2.setClickable(false);
             imgBtnWrong1.setClickable(false);
             imgBtnWrong2.setClickable(false);
-            btnEndGame.setText("Try Again");
+            btnEndGame.setText(tryAgain);
             btnEndGame.setClickable(true);
             btnEndGame.setOnClickListener(new View.OnClickListener() {
                 @Override

@@ -21,6 +21,7 @@
     <string name="laksa">Laksa</string>
     <string name="find">Find:</string>
     <string name="chooseDiff">Choose Difficulty</string>
+    <string name="tryAgain">Try Again!</string>
     <string name="goodJob">Good Job!</string>
     <string name="back">Back</string>
     <string name="image_button_flask_description">Flask button</string>
@@ -31,7 +32,6 @@
     <string name="htp3">Select one of the eight themes available to start your game.</string>
     <string name="htp4">To complete the game, gather all the green ticks through the correct options.</string>
     <string name="htp5">A wrong option will be denoted by a red cross and its sound effects. Good luck and have fun!</string>
-    <string name="htp6">Home page</string>
     <string name="cutlery">Cutlery</string>
     <string name="food">Food</string>
     <string name="animals">Animals</string>
