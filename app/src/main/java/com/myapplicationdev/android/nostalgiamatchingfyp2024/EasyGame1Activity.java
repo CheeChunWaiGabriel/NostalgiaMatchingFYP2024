@@ -24,8 +24,8 @@ public class EasyGame1Activity extends AppCompatActivity {
     Button btnEndGame;
     Button btnBack;
     GameRun gameRun = new GameRun();
-    Drawable redBG = BGcolor.redBG(20, 10);
-    Drawable greenBG = BGcolor.greenBG(20, 10);
+    Drawable redBG = ColorHelper.redBG(20, 10);
+    Drawable greenBG = ColorHelper.greenBG(20, 10);
     String goodJob;
     String tryAgain;
 

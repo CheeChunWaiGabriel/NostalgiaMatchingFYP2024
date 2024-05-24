@@ -5,7 +5,7 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.LayerDrawable;
 
-public class BGcolor {
+public class ColorHelper {
     public static Drawable redBG(int innerPadding, int outerPadding) {
         // Create the inner rectangle with solid white color
         GradientDrawable innerRect = new GradientDrawable();

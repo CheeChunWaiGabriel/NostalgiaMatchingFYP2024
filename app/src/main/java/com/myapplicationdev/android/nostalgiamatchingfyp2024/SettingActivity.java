@@ -50,14 +50,23 @@ public class SettingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Intent. ACTION_VIEW, Uri.parse("https://kydz.com.sg/"));
                 startActivity(intent);
-
             }
         });
 
+        btnlangEN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LanguageHelper.setLanguage(SettingActivity.this, "en");
+                // Refresh activity to apply changes
+                recreate();
+            }
+        });
         btnlangCN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                LanguageHelper.setLanguage(SettingActivity.this, "zh");
+                // Refresh activity to apply changes
+                recreate();
             }
         });
     }

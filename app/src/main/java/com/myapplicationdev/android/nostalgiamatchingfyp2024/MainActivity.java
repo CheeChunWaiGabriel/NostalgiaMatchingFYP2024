@@ -11,6 +11,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        String savedLanguage = LanguageHelper.getLanguage(this);
+        LanguageHelper.setLanguage(this, savedLanguage);
+
         setContentView(R.layout.activity_main);
 
         // Initialize buttons
