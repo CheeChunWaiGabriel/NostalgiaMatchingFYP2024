@@ -32,14 +32,16 @@ public class MainActivity extends AppCompatActivity {
         mediumButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle medium difficulty selection
+                Intent intent = new Intent(MainActivity.this, NormalActivity.class);
+                startActivity(intent);
             }
         });
 
         hardButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle hard difficulty selection
+                Intent intent = new Intent(MainActivity.this, ExpertActivity.class);
+                startActivity(intent);
             }
         });
 

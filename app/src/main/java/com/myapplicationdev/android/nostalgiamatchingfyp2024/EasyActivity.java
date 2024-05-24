@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class EasyActivity extends AppCompatActivity {
     Button btnPuzzle1;
+    Button btnHome;
 
 
     @Override
@@ -20,6 +21,7 @@ public class EasyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_puzzle_easy);
 
         btnPuzzle1 = findViewById(R.id.btnFlask);
+        btnHome = findViewById(R.id.buttonHomePage);
 
         btnPuzzle1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,6 +31,13 @@ public class EasyActivity extends AppCompatActivity {
             }
         });
 
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EasyActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
 
