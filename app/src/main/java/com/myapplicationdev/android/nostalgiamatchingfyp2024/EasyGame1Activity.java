@@ -37,10 +37,12 @@ public class EasyGame1Activity extends AppCompatActivity {
         imgBtnCorrect2 = findViewById(R.id.imageButtonCorrect2);
         imgBtnWrong1 = findViewById(R.id.imageButtonWrong1);
         imgBtnWrong2 = findViewById(R.id.imageButtonWrong2);
+
         correctImg1 = findViewById(R.id.correctImg1);
         correctImg2 = findViewById(R.id.correctImg2);
         wrongImg1 = findViewById(R.id.wrongImg1);
         wrongImg2 = findViewById(R.id.wrongImg2);
+
         btnEndGame = findViewById(R.id.buttonResult);
         btnBack = findViewById(R.id.buttonBack);
 
@@ -49,16 +51,7 @@ public class EasyGame1Activity extends AppCompatActivity {
             public void onClick(View v) {
                 imgBtnCorrect1.setBackground(greenBG);
                 gameRun.correctOptionFound();
-                gameRun.endGameEasy();
-                if (gameRun.getCorrectOption() == 1) {
-                    correctImg1.setVisibility(View.VISIBLE);
-                }
-                if (gameRun.getGameEnded()) {
-                    btnEndGame.setVisibility(View.VISIBLE);
-                    correctImg2.setVisibility(View.VISIBLE);
-                    imgBtnWrong1.setClickable(false);
-                    imgBtnWrong2.setClickable(false);
-                }
+                showCorrect();
                 imgBtnCorrect1.setClickable(false);
             }
         });
@@ -67,40 +60,22 @@ public class EasyGame1Activity extends AppCompatActivity {
             public void onClick(View v) {
                 imgBtnCorrect2.setBackground(greenBG);
                 gameRun.correctOptionFound();
-                gameRun.endGameEasy();
-                if (gameRun.getCorrectOption() == 1) {
-                    correctImg1.setVisibility(View.VISIBLE);
-                }
-                if (gameRun.getGameEnded()) {
-                    btnEndGame.setVisibility(View.VISIBLE);
-                    correctImg2.setVisibility(View.VISIBLE);
-                    imgBtnWrong1.setClickable(false);
-                    imgBtnWrong2.setClickable(false);
-                }
+                showCorrect();
+                imgBtnCorrect2.setClickable(false);
             }
         });
         imgBtnWrong1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 imgBtnWrong1.setBackground(redBG);
-                if (gameRun.getCorrectOption() == 1){
-                    wrongImg2.setVisibility(View.VISIBLE);
-                } else {
-                    wrongImg1.setVisibility(View.VISIBLE);
-                }
-                getGameResult();
+                showWrong();
             }
         });
         imgBtnWrong2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 imgBtnWrong2.setBackground(redBG);
-                if (gameRun.getCorrectOption() == 1){
-                    wrongImg2.setVisibility(View.VISIBLE);
-                } else {
-                    wrongImg1.setVisibility(View.VISIBLE);
-                }
-                getGameResult();
+                showWrong();
             }
         });
 
@@ -113,10 +88,33 @@ public class EasyGame1Activity extends AppCompatActivity {
         });
     }
 
+    private void showCorrect(){
+        gameRun.endGameEasy();
+        if (gameRun.getCorrectOption() == 1) {
+            correctImg1.setVisibility(View.VISIBLE);
+        }else if (gameRun.getGameWin()) {
+            correctImg2.setVisibility(View.VISIBLE);
+            getGameResult();
+        }
+    }
+
+    private  void showWrong(){
+        if (gameRun.getCorrectOption() == 1){
+            wrongImg2.setVisibility(View.VISIBLE);
+        } else {
+            wrongImg1.setVisibility(View.VISIBLE);
+        }
+        getGameResult();
+    }
+
     private void getGameResult() {
-        if (gameRun.getGameEnded()) {
+        if (gameRun.getGameWin()) {
             btnEndGame.setText("Good Job!");
             btnEndGame.setClickable(false);
+            imgBtnCorrect1.setClickable(false);
+            imgBtnCorrect2.setClickable(false);
+            imgBtnWrong1.setClickable(false);
+            imgBtnWrong2.setClickable(false);
         } else {
             imgBtnCorrect1.setClickable(false);
             imgBtnCorrect2.setClickable(false);
@@ -132,7 +130,6 @@ public class EasyGame1Activity extends AppCompatActivity {
             });
         }
 
-        // Make the button visible and clickable after the game ends
         btnEndGame.setVisibility(View.VISIBLE);
     }
 

@@ -324,6 +324,7 @@
         android:text="@string/chooseDiff"
         android:textColor="@color/black"
         android:textSize="27dp"
+        android:visibility="invisible"
         app:backgroundTint="@null" />
 
     <Button

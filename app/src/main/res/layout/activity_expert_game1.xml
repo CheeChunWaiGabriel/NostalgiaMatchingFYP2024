@@ -79,7 +79,6 @@
             android:textSize="35dp" />
 
         <FrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="80dp"
             android:layout_height="100dp"
             android:layout_marginRight="10dp"
@@ -108,9 +107,9 @@
                 android:id="@+id/wrongImg1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/wrong"
                 android:layout_gravity="center"
-                android:visibility="invisible"/>
+                android:src="@drawable/wrong"
+                android:visibility="invisible" />
         </FrameLayout>
 
 
@@ -324,6 +323,7 @@
         android:text="@string/chooseDiff"
         android:textColor="@color/black"
         android:textSize="27dp"
+        android:visibility="invisible"
         app:backgroundTint="@null" />
 
     <Button
