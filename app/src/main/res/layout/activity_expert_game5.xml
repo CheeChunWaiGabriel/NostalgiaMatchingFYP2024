@@ -94,7 +94,7 @@
                 android:background="@drawable/blackoutline_bg"
                 android:scaleType="fitCenter"
                 app:backgroundTint="@null"
-                app:srcCompat="@drawable/parrot" />
+                app:srcCompat="@drawable/orchid" />
 
             <ImageView
                 android:id="@+id/correctImg1"
@@ -130,7 +130,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/blackoutline_bg"
                 app:backgroundTint="@null"
-                app:srcCompat="@drawable/parrot" />
+                app:srcCompat="@drawable/orchid" />
 
             <ImageView
                 android:id="@+id/correctImg2"
@@ -166,7 +166,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/blackoutline_bg"
                 app:backgroundTint="@null"
-                app:srcCompat="@drawable/parrot" />
+                app:srcCompat="@drawable/orchid" />
 
             <ImageView
                 android:id="@+id/correctImg3"
@@ -203,17 +203,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:scaleType="centerInside"
-            android:src="@drawable/mortar_pestle"/>
-
-        <ImageButton
-        android:id="@+id/imageButtonExpertCorrect1"
-        android:layout_width="70dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="5dp"
-        android:layout_weight="1"
-        android:background="@color/white"
-        android:scaleType="centerInside"
-        android:src="@drawable/parrot_tails" />
+            android:src="@drawable/dimsum"/>
 
         <ImageButton
             android:id="@+id/imageButtonExpertWrong2"
@@ -223,7 +213,17 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:scaleType="centerInside"
-            android:src="@drawable/orchid" />
+            android:src="@drawable/idkwhatsthis" />
+
+        <ImageButton
+            android:id="@+id/imageButtonExpertCorrect1"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:scaleType="centerInside"
+            android:src="@drawable/orchid_section_1" />
 
     </LinearLayout>
 
@@ -238,24 +238,24 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/imageButtonCorrect2"
+            android:id="@+id/imageButtonWrong3"
             android:layout_width="70dp"
             android:layout_height="80dp"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:scaleType="centerInside"
-            android:src="@drawable/parrot_head" />
+            android:src="@drawable/basket_of_eggs" />
 
         <ImageButton
-            android:id="@+id/imageButtonWrong3"
+            android:id="@+id/imageButtonCorrect2"
             android:layout_width="70dp"
             android:layout_height="80dp"
             android:layout_marginLeft="5dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:scaleType="centerInside"
-            android:src="@drawable/laksa" />
+            android:src="@drawable/orchid_section_2" />
 
         <ImageButton
             android:id="@+id/imageButtonWrong4"
@@ -265,7 +265,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:scaleType="centerInside"
-            android:src="@drawable/rose" />
+            android:src="@drawable/mortar_pestle" />
 
     </LinearLayout>
 
@@ -287,7 +287,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:scaleType="centerInside"
-            android:src="@drawable/radio" />
+            android:src="@drawable/alarm_clock" />
 
         <ImageButton
             android:id="@+id/imageButtonWrong6"
@@ -297,7 +297,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:scaleType="centerInside"
-            android:src="@drawable/ang_ku_kueh" />
+            android:src="@drawable/food_cover" />
 
         <ImageButton
             android:id="@+id/imageButtonCorrect3"
@@ -307,7 +307,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:scaleType="centerInside"
-            android:src="@drawable/parrot_body" />
+            android:src="@drawable/orchid_section_3" />
 
 
     </LinearLayout>
