@@ -69,6 +69,21 @@ public class SettingActivity extends AppCompatActivity {
                 recreate();
             }
         });
+        btnlangBA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LanguageHelper.setLanguage(SettingActivity.this, "in");
+                // Refresh activity to apply changes
+                recreate();
+            }
+        });
+        btnlangTA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LanguageHelper.setLanguage(SettingActivity.this, "ta");
+                // Refresh activity to apply changes
+                recreate();
+            }
+        });
     }
-
 }

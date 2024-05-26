@@ -9,10 +9,10 @@
     <!-- HaiXuan-->
     <string name="settings">设置</string>
     <string name="lang">语言</string>
-    <string name="langEN">英语</string>
+    <string name="langEN">English</string>
     <string name="langCN">中文</string>
-    <string name="langIN">马来文</string>
-    <string name="langTA">泰米尔语</string>
+    <string name="langIN">Bahasa</string>
+    <string name="langTA">தமிழ்</string>
     <string name="homePage">主页</string>
     <string name="KYDZWeb">KYDZ网站</string>
     <string name="chooseTheme">选择主题</string>

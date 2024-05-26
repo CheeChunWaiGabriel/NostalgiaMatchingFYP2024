@@ -18,6 +18,7 @@ public class ExpertActivity extends AppCompatActivity {
     Button btnPuzzle6;
     Button btnPuzzle7;
     Button btnPuzzle8;
+    Button btnHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class ExpertActivity extends AppCompatActivity {
         btnPuzzle6= findViewById(R.id.btnSatay);
         btnPuzzle7= findViewById(R.id.btnGoldCoins);
         btnPuzzle8= findViewById(R.id.btnWeddingBasket);
+        btnHome = findViewById(R.id.buttonHomePage);
 
         btnPuzzle1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,6 +96,13 @@ public class ExpertActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ExpertActivity.this, ExpertGame8Activity.class);
+                startActivity(intent);
+            }
+        });
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ExpertActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
