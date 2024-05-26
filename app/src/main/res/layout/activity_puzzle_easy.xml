@@ -40,7 +40,7 @@
         android:layout_height="450dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:layout_weight="0.1">>
+        android:layout_weight="0.1">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -294,6 +294,7 @@
                     app:backgroundTint="@null" />
 
                 <Button
+                    android:id="@+id/btnSpoon"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"

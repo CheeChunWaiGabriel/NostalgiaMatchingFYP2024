@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">நினைவுச்சின்ன (FYP2024)</string>
+    <!-- Gabriel -->
+    <string name="Title">நினைவுச்சின்ன</string>
+    <string name="easy">எளிது</string>
+    <string name="medium">இலவசம்</string>
+    <string name="hard">வல்லுநர்</string>
+    <string name="instructions">எப்படி விளையாடுவது</string>
+    <!-- HaiXuan-->
+    <string name="settings">அமைப்புகள்</string>
+    <string name="lang">மொழி</string>
+    <string name="langEN">English</string>
+    <string name="langCN">中文</string>
+    <string name="langIN">Bahasa</string>
+    <string name="langTA">தமிழ்</string>
+    <string name="homePage">முகப்பு</string>
+    <string name="KYDZWeb">KYDZ வலைத்தளம்</string>
+    <string name="chooseTheme">தீமையை தேர்வு செய்யவும்</string>
+    <string name="start">தொடங்கு!</string>
+    <string name="flask">கண்ணாடி பாத்திரம்</string>
+    <string name="laksa">லக்ஸா</string>
+    <string name="find">தேடு:</string>
+    <string name="chooseDiff">விகிதத்தை தேர்வு செய்யவும்</string>
+    <string name="tryAgain">மீண்டும் முயற்சிக்கவும்!</string>
+    <string name="goodJob">நல்ல வேலை!</string>
+    <string name="back">மீண்டும்</string>
+    <string name="image_button_flask_description">கண்ணாடி பாத்திரம் பொத்தான்</string>
+    <string name="image_button_laksa_description">லக்ஸா பொத்தான்</string>
+    <!-- Cheng En-->
+    <string name="htp1">விளையாட்டு விதிமுறைகள்</string>
+    <string name="htp2">முகப்பு பக்கத்தில் இருந்து ஒரு சிரமத்தைத் தேர்வுசெய்க, 1* என்பது எளிமையானது, 3* என்பது மிகவும் கடினமானது.</string>
+    <string name="htp3">உங்கள் விளையாட்டைத் தொடங்குவதற்கு கிடைக்கக்கூடிய எட்டு தீமங்களில் ஒன்றைத் தேர்வுசெய்க.</string>
+    <string name="htp4">விளையாட்டை முடிக்க, சரியான விருப்பங்களின் அனைத்து பச்சை குறிகளை சேகரிக்கவும்.</string>
+    <string name="htp5">தவறான விருப்பங்கள் சிவப்பு குறியுடன் மற்றும் அதன் ஒலி விளைவுடன் குறிக்கப்படும். உங்களுக்கு வாழ்த்துக்கள், மகிழ்ச்சியுடன் விளையாடுங்கள்!</string>
+    <string name="cutlery">உபகரணங்கள்</string>
+    <string name="food">உணவு</string>
+    <string name="animals">விலங்குகள்</string>
+    <string name="livingRoom">பிழைத்தல் அறை</string>
+    <string name="flower">மலர்</string>
+    <string name="scenery">காட்சி</string>
+    <string name="snacks">தின்னி</string>
+    <string name="householdItems">வீட்டு உபகரணங்கள்</string>
+    <!-- Jin Yan-->
+    <string name="Armchair">மர நாற்காலி</string>
+    <string name="Bird_Cage">பறவை கூண்டு</string>
+    <string name="Rose">ரோஜா</string>
+    <string name="Dog">நாய்</string>
+    <string name="Clogs">மர செருப்பு</string>
+    <string name="Spoon">கரண்டி</string>
+    <string name="Parrot">கிளி</string>
+    <string name="DimSum">டிம் சம்</string>
+    <string name="Tingkat">நிலைப்படுத்தப்பட்ட தொட்டி</string>
+    <string name="Mahjong">மாஜாங்</string>
+    <string name="Orchid">ஆர்க்கிட்</string>
+    <string name="Satay">சடாய்</string>
+    <string name="GoldCoins">தங்க நாணயங்கள்</string>
+    <string name="WeddingBasket">திருமணக்கூடை</string>
+</resources>
+

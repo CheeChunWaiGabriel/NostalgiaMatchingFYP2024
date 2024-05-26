@@ -23,8 +23,7 @@ public class NormalActivity extends AppCompatActivity {
         btnPuzzle2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(NormalActivity.this, EasyGame1Activity.class);
-                startActivity(intent);
+
             }
         });
 

@@ -13,14 +13,62 @@
         android:theme="@style/Theme.NostalgiaMatchingFYP2024"
         tools:targetApi="31">
         <activity
+            android:name=".ExpertActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExpertGame1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ExpertGame2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ExpertGame3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ExpertGame4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ExpertGame5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ExpertGame6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ExpertGame7Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ExpertGame8Activity"
+            android:exported="false" />
+        <activity
             android:name=".NormalActivity"
             android:exported="false" />
+        <activity
+            android:name=".EasyActivity"
+            android:exported="true" />
         <activity
             android:name=".EasyGame1Activity"
             android:exported="false" />
         <activity
-            android:name=".EasyActivity"
-            android:exported="true"></activity>
+            android:name=".EasyGame2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".EasyGame3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".EasyGame4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".EasyGame5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".EasyGame6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".EasyGame7Activity"
+            android:exported="false" />
+        <activity
+            android:name=".EasyGame8Activity"
+            android:exported="false" />
         <activity
             android:name=".SettingActivity"
             android:exported="true" />
