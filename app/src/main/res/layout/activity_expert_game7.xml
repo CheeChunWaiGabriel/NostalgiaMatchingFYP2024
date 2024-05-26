@@ -79,6 +79,7 @@
             android:textSize="35dp" />
 
         <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="80dp"
             android:layout_height="100dp"
             android:layout_marginRight="10dp"
@@ -93,7 +94,7 @@
                 android:background="@drawable/blackoutline_bg"
                 android:scaleType="fitCenter"
                 app:backgroundTint="@null"
-                app:srcCompat="@drawable/parrot" />
+                app:srcCompat="@drawable/goldcoins" />
 
             <ImageView
                 android:id="@+id/correctImg1"
@@ -107,9 +108,9 @@
                 android:id="@+id/wrongImg1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
                 android:src="@drawable/wrong"
-                android:visibility="invisible" />
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
         </FrameLayout>
 
 
@@ -129,7 +130,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/blackoutline_bg"
                 app:backgroundTint="@null"
-                app:srcCompat="@drawable/parrot" />
+                app:srcCompat="@drawable/goldcoins" />
 
             <ImageView
                 android:id="@+id/correctImg2"
@@ -165,7 +166,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/blackoutline_bg"
                 app:backgroundTint="@null"
-                app:srcCompat="@drawable/parrot" />
+                app:srcCompat="@drawable/goldcoins" />
 
             <ImageView
                 android:id="@+id/correctImg3"
@@ -195,24 +196,14 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/imageButtonExpertWrong1"
+            android:id="@+id/imageButtonExpertCorrect1"
             android:layout_width="70dp"
             android:layout_height="80dp"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:scaleType="centerInside"
-            android:src="@drawable/mortar_pestle"/>
-
-        <ImageButton
-        android:id="@+id/imageButtonExpertCorrect1"
-        android:layout_width="70dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="5dp"
-        android:layout_weight="1"
-        android:background="@color/white"
-        android:scaleType="centerInside"
-        android:src="@drawable/parrot_tails" />
+            android:src="@drawable/coins_group_1"/>
 
         <ImageButton
             android:id="@+id/imageButtonExpertWrong2"
@@ -222,7 +213,17 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:scaleType="centerInside"
-            android:src="@drawable/orchid" />
+            android:src="@drawable/rose" />
+
+        <ImageButton
+            android:id="@+id/imageButtonExpertWrong1"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:scaleType="centerInside"
+            android:src="@drawable/parrot" />
 
     </LinearLayout>
 
@@ -237,24 +238,24 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/imageButtonCorrect2"
+            android:id="@+id/imageButtonWrong3"
             android:layout_width="70dp"
             android:layout_height="80dp"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:scaleType="centerInside"
-            android:src="@drawable/parrot_head" />
+            android:src="@drawable/mahjong" />
 
         <ImageButton
-            android:id="@+id/imageButtonWrong3"
+            android:id="@+id/imageButtonCorrect2"
             android:layout_width="70dp"
             android:layout_height="80dp"
             android:layout_marginLeft="5dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:scaleType="centerInside"
-            android:src="@drawable/laksa" />
+            android:src="@drawable/coins_group_2" />
 
         <ImageButton
             android:id="@+id/imageButtonWrong4"
@@ -264,7 +265,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:scaleType="centerInside"
-            android:src="@drawable/rose" />
+            android:src="@drawable/dog" />
 
     </LinearLayout>
 
@@ -286,7 +287,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:scaleType="centerInside"
-            android:src="@drawable/radio" />
+            android:src="@drawable/spoon" />
 
         <ImageButton
             android:id="@+id/imageButtonWrong6"
@@ -296,7 +297,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:scaleType="centerInside"
-            android:src="@drawable/ang_ku_kueh" />
+            android:src="@drawable/tingkat" />
 
         <ImageButton
             android:id="@+id/imageButtonCorrect3"
@@ -306,7 +307,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:scaleType="centerInside"
-            android:src="@drawable/parrot_body" />
+            android:src="@drawable/coins_group_3" />
 
 
     </LinearLayout>

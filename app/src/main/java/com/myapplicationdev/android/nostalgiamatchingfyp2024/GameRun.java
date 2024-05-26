@@ -2,24 +2,30 @@ package com.myapplicationdev.android.nostalgiamatchingfyp2024;
 
 public class GameRun {
 
-    private boolean gameEnded;
+    private boolean gameWin;
     private int correctOption;
     private int wrongOption;
 
     public GameRun() {
-        gameEnded = false;
+        gameWin = false;
         correctOption= 0;
         wrongOption= 0;
     }
 
     public void endGameEasy() {
         if (correctOption == 2) {
-            gameEnded = true;
+            gameWin = true;
         }
     }
 
-    public boolean getGameEnded() {
-        return gameEnded;
+    public void endGameExpert() {
+        if (correctOption == 3) {
+            gameWin = true;
+        }
+    }
+
+    public boolean getGameWin() {
+        return gameWin;
     }
 
     public void correctOptionFound() {

@@ -11,6 +11,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        String savedLanguage = LanguageHelper.getLanguage(this);
+        LanguageHelper.setLanguage(this, savedLanguage);
+
         setContentView(R.layout.activity_main);
 
         // Initialize buttons
@@ -32,14 +36,16 @@ public class MainActivity extends AppCompatActivity {
         mediumButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle medium difficulty selection
+                Intent intent = new Intent(MainActivity.this, NormalActivity.class);
+                startActivity(intent);
             }
         });
 
         hardButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle hard difficulty selection
+                Intent intent = new Intent(MainActivity.this, ExpertActivity.class);
+                startActivity(intent);
             }
         });
 

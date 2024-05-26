@@ -155,7 +155,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/orange_btn"
-            android:text="@string/htp6"
+            android:text="@string/homePage"
             android:textColor="@android:color/black"
             android:textSize="25sp"
             app:backgroundTint="@null" />

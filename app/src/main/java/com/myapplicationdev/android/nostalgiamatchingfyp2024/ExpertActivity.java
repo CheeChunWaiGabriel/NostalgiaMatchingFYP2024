@@ -8,24 +8,24 @@ import android.widget.Button;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class NormalActivity extends AppCompatActivity {
-    Button btnPuzzle2;
+public class ExpertActivity extends AppCompatActivity {
 
+    Button btnPuzzle1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_puzzle_normal);
+        setContentView(R.layout.activity_puzzle_expert);
 
-        btnPuzzle2 = findViewById(R.id.btnCutlery);
+        btnPuzzle1 = findViewById(R.id.btnParrot);
 
-        btnPuzzle2.setOnClickListener(new View.OnClickListener() {
+        btnPuzzle1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(ExpertActivity.this, ExpertGame1Activity.class);
+                startActivity(intent);
             }
         });
-
     }
 }
