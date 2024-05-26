@@ -192,7 +192,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btnRose"
+                    android:id="@+id/btnTingkat"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -207,7 +207,7 @@
                     app:backgroundTint="@null" />
 
                 <Button
-                    android:id="@+id/btnDog"
+                    android:id="@+id/btnMahjong"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -279,7 +279,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btnClogs"
+                    android:id="@+id/btnOrchid"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -294,6 +294,7 @@
                     app:backgroundTint="@null" />
 
                 <Button
+                    android:id="@+id/btnSatay"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -364,7 +365,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btnArmchair"
+                    android:id="@+id/btnGoldCoins"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -379,7 +380,7 @@
                     app:backgroundTint="@null" />
 
                 <Button
-                    android:id="@+id/btnBirdCage"
+                    android:id="@+id/btnWeddingBasket"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
