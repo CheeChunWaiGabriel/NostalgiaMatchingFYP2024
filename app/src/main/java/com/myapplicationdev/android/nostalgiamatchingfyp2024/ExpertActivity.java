@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ExpertActivity extends AppCompatActivity {
 
+    Button btnHome;
     Button btnPuzzle1;
 
     @Override
@@ -19,6 +20,15 @@ public class ExpertActivity extends AppCompatActivity {
         setContentView(R.layout.activity_puzzle_expert);
 
         btnPuzzle1 = findViewById(R.id.btnParrot);
+        btnHome = findViewById(R.id.buttonHomePage);
+
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ExpertActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnPuzzle1.setOnClickListener(new View.OnClickListener() {
             @Override

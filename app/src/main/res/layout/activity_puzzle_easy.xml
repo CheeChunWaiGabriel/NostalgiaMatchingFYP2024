@@ -294,6 +294,7 @@
                     app:backgroundTint="@null" />
 
                 <Button
+                    android:id="@+id/btnSpoon"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
