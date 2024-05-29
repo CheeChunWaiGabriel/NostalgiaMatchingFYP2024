@@ -13,7 +13,7 @@
     <string name="langCN">中文</string>
     <string name="langIN">Bahasa</string>
     <string name="langTA">தமிழ்</string>
-    <string name="homePage">முகப்பு</string>
+    <string name="homePage">முகப்புப்பக்கம்</string>
     <string name="KYDZWeb">KYDZ வலைத்தளம்</string>
     <string name="chooseTheme">தீமையை தேர்வு செய்யவும்</string>
     <string name="start">தொடங்கு!</string>
@@ -28,10 +28,10 @@
     <string name="image_button_laksa_description">லக்ஸா பொத்தான்</string>
     <!-- Cheng En-->
     <string name="htp1">விளையாட்டு விதிமுறைகள்</string>
-    <string name="htp2">முகப்பு பக்கத்தில் இருந்து ஒரு சிரமத்தைத் தேர்வுசெய்க, 1* என்பது எளிமையானது, 3* என்பது மிகவும் கடினமானது.</string>
-    <string name="htp3">உங்கள் விளையாட்டைத் தொடங்குவதற்கு கிடைக்கக்கூடிய எட்டு தீமங்களில் ஒன்றைத் தேர்வுசெய்க.</string>
-    <string name="htp4">விளையாட்டை முடிக்க, சரியான விருப்பங்களின் அனைத்து பச்சை குறிகளை சேகரிக்கவும்.</string>
-    <string name="htp5">தவறான விருப்பங்கள் சிவப்பு குறியுடன் மற்றும் அதன் ஒலி விளைவுடன் குறிக்கப்படும். உங்களுக்கு வாழ்த்துக்கள், மகிழ்ச்சியுடன் விளையாடுங்கள்!</string>
+    <string name="htp2">முகப்புப் பக்கத்திலிருந்து ஒரு சிரமத்தைத் தேர்ந்தெடுக்கவும், 1* எளிதானது, 3* மிகவும் மேம்பட்டது.</string>
+    <string name="htp3">உங்கள் விளையாட்டைத் தொடங்க எட்டு தீம்களில் ஒன்றைத் தேர்ந்தெடுக்கவும்.</string>
+    <string name="htp4">விளையாட்டை முடிக்க, சரியான விருப்பங்கள் மூலம் அனைத்து பச்சை உண்ணிகளையும் சேகரிக்கவும்.</string>
+    <string name="htp5">ஒரு தவறான விருப்பம் சிவப்பு குறுக்கு மற்றும் அதன் ஒலி விளைவுகளால் குறிக்கப்படும். நல்ல அதிர்ஷ்டம் மற்றும் வேடிக்கை!</string>
     <string name="cutlery">உபகரணங்கள்</string>
     <string name="food">உணவு</string>
     <string name="animals">விலங்குகள்</string>
@@ -55,5 +55,13 @@
     <string name="Satay">சடாய்</string>
     <string name="GoldCoins">தங்க நாணயங்கள்</string>
     <string name="WeddingBasket">திருமணக்கூடை</string>
+    <string name="Find3Cutlery">3 கட்லரிகளைக் கண்டுபிடி</string>string>
+    <string name="Find3Food">3 உணவைக் கண்டுபிடி</string>
+    <string name="Find3Living">3 உணவைக் கண்டுபிடி</string>
+    <string name="Find3Flowers">3 உணவைக் கண்டுபிடி</string>
+    <string name="Find3Scenery">3 காட்சிகளைக் கண்டறியவும்</string>
+    <string name="Find3Snacks">3 சிற்றுண்டிகளைக் கண்டறியவும்</string>
+    <string name="Find3Animals">3 விலங்குகளைக் கண்டுபிடி</string>
+    <string name="Find3item">3 உருப்படிகளைக் கண்டறியவும்</string>
 </resources>
 

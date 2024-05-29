@@ -6,13 +6,7 @@
     <string name="medium">Normal</string>
     <string name="hard">Expert</string>
     <string name="instructions">How To Play</string>
-    <!-- HaiXuan-->
-    <string name="settings">Settings</string>
-    <string name="lang">Language</string>
-    <string name="langEN">English</string>
-    <string name="langCN">中文</string>
-    <string name="langIN">Bahasa</string>
-    <string name="langTA">தமிழ்</string>
+
     <string name="homePage">Home Page</string>
     <string name="KYDZWeb">KYDZ Website</string>
     <string name="chooseTheme">Choose a theme</string>
