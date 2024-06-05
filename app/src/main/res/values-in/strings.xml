@@ -7,16 +7,16 @@
     <string name="hard">Sulit</string>
     <string name="instructions">Cara Bermain</string>
     <!-- HaiXuan-->
-    <string name="settings">Pengaturan</string>
-    <string name="lang">Bahasa</string>
+    <string name="settings">Tetapan</string>
+    <string name="lang">Bahasa Melayu</string>
     <string name="langEN">English</string>
     <string name="langCN">中文</string>
     <string name="langIN">Bahasa</string>
     <string name="langTA">தமிழ்</string>
-    <string name="homePage">Beranda</string>
+    <string name="homePage">Laman Utama</string>
     <string name="KYDZWeb">Situs KYDZ</string>
-    <string name="chooseTheme">Pilih Tema</string>
-    <string name="start">Mulai!</string>
+    <string name="chooseTheme">Pilih Tema Leman</string>
+    <string name="start">Mula!</string>
     <string name="flask">Labu</string>
     <string name="laksa">Laksa</string>
     <string name="find">Temukan:</string>
@@ -32,7 +32,7 @@
     <string name="htp3">Pilih salah satu dari delapan tema yang tersedia untuk memulai permainan Anda.</string>
     <string name="htp4">Untuk menyelesaikan permainan, kumpulkan semua tanda centang hijau untuk pilihan yang benar.</string>
     <string name="htp5">Pilihan yang salah akan ditandai dengan tanda silang merah dan efek suara. Semoga beruntung dan bersenang-senanglah!</string>
-    <string name="cutlery">Peralatan Makan</string>
+    <string name="cutlery">Alatan Makan</string>
     <string name="food">Makanan</string>
     <string name="animals">Hewan</string>
     <string name="livingRoom">Ruang Tamu</string>
@@ -54,5 +54,5 @@
     <string name="Orchid">Anggrek</string>
     <string name="Satay">Sate</string>
     <string name="GoldCoins">Koin Emas</string>
-    <string name="WeddingBasket">Keranjang Pernikahan</string>
+    <string name="WeddingBasket">Keranjang Kahwin</string>
 </resources>
