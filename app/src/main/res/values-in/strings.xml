@@ -55,6 +55,14 @@
     <string name="Satay">Sate</string>
     <string name="GoldCoins">Koin Emas</string>
     <string name="WeddingBasket">Keranjang Kahwin</string>
+    <string name="Find3Cutlery">Cari 3 Alatan Makan</string>
+    <string name="Find3Food">Cari 3 Makanan</string>
+    <string name="Find3Living">Cari 3 Barang Di Ruang Tamu</string>
+    <string name="Find3Flowers">Cari 3 Bunga</string>
+    <string name="Find3Scenery">Cari 3 Pemandangan</string>
+    <string name="Find3Snacks">Cari 3 snek?</string>
+    <string name="Find3Animals">Cari 3 Haiwan</string>
+    <string name="Find3item">Cari 3 Barang</string>
 </resources>
 
 
