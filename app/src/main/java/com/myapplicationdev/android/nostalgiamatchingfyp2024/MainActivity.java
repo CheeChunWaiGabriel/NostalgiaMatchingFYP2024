@@ -1,12 +1,14 @@
 package com.myapplicationdev.android.nostalgiamatchingfyp2024;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+    private MediaPlayer buttonClick;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,12 +26,15 @@ public class MainActivity extends AppCompatActivity {
         Button settingsButton = findViewById(R.id.settingsButton);
         Button howToPlayButton = findViewById(R.id.howToPlayButton);
 
+        buttonClick = MediaPlayer.create(this, R.raw.buttonclick);
+
         // Set click listeners for buttons
         easyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, EasyActivity.class);
                 startActivity(intent);
+                buttonClick.start();
             }
         });
 
@@ -38,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, NormalActivity.class);
                 startActivity(intent);
+                buttonClick.start();
             }
         });
 
@@ -46,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ExpertActivity.class);
                 startActivity(intent);
+                buttonClick.start();
             }
         });
 
@@ -54,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SettingActivity.class);
                 startActivity(intent);
+                buttonClick.start();
             }
         });
 
@@ -62,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, HowToPlayActivity.class);
                 startActivity(intent);
+                buttonClick.start();
             }
         });
     }

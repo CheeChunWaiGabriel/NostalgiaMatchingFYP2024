@@ -32,18 +32,9 @@ public class GameRun {
         correctOption++;
     }
 
-    public void wrongOptionFound() {
-        correctOption++;
-    }
 
     public int getCorrectOption() {
         return correctOption;
     }
 
-    public void resetCorrectOption() {
-        correctOption = 0;
-    }
-    public void resetWrongOption() {
-        wrongOption = 0;
-    }
 }
