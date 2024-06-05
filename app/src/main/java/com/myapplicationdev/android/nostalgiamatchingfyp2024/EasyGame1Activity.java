@@ -1,6 +1,7 @@
 package com.myapplicationdev.android.nostalgiamatchingfyp2024;
 
 import android.graphics.drawable.Drawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +14,9 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class EasyGame1Activity extends AppCompatActivity {
+    private MediaPlayer buttonClick;
+    private MediaPlayer correct;
+    private MediaPlayer wrong;
     ImageButton imgBtnCorrect1;
     ImageButton imgBtnCorrect2;
     ImageButton imgBtnWrong1;
@@ -50,6 +54,10 @@ public class EasyGame1Activity extends AppCompatActivity {
 
         goodJob = getString(R.string.goodJob);
         tryAgain = getString(R.string.tryAgain);
+
+        buttonClick = MediaPlayer.create(this, R.raw.buttonclick);
+        correct = MediaPlayer.create(this, R.raw.correct);
+        wrong = MediaPlayer.create(this, R.raw.wrong);
 
         imgBtnCorrect1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,12 +97,14 @@ public class EasyGame1Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(EasyGame1Activity.this, EasyActivity.class);
                 startActivity(intent);
+                buttonClick.start();
             }
         });
     }
 
     private void showCorrect(){
         gameRun.endGameEasy();
+        correct.start();
         if (gameRun.getCorrectOption() == 1) {
             correctImg1.setVisibility(View.VISIBLE);
         }else if (gameRun.getGameWin()) {
@@ -104,6 +114,7 @@ public class EasyGame1Activity extends AppCompatActivity {
     }
 
     private  void showWrong(){
+        wrong.start();
         if (gameRun.getCorrectOption() == 1){
             wrongImg2.setVisibility(View.VISIBLE);
         } else {
@@ -130,6 +141,7 @@ public class EasyGame1Activity extends AppCompatActivity {
             btnEndGame.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    buttonClick.start();
                     reloadActivity();
                 }
             });
