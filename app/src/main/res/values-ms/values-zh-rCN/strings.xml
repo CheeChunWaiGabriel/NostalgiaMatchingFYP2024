@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">怀旧配对（FYP2024）</string>
+    <!-- Gabriel -->
+    <string name="Title">怀旧配对</string>
+    <string name="easy">简单</string>
+    <string name="medium">普通</string>
+    <string name="hard">专家</string>
+    <string name="instructions">如何玩</string>
+    <!-- HaiXuan-->
+    <string name="settings" tools:ignore="ExtraTranslation">设置</string>
+    <string name="lang" tools:ignore="ExtraTranslation">语言</string>
+    <string name="langEN" tools:ignore="ExtraTranslation">English</string>
+    <string name="langCN" tools:ignore="ExtraTranslation">中文</string>
+    <string name="langIN" tools:ignore="ExtraTranslation">Bahasa</string>
+    <string name="langTA" tools:ignore="ExtraTranslation">தமிழ்</string>
+    <string name="homePage">主页</string>
+    <string name="KYDZWeb">KYDZ网站</string>
+    <string name="chooseTheme">选择主题</string>
+    <string name="start">开始！</string>
+    <string name="flask">烧瓶</string>
+    <string name="laksa">叻沙</string>
+    <string name="find">找：</string>
+    <string name="chooseDiff">选择难度</string>
+    <string name="tryAgain">再试一次！</string>
+    <string name="goodJob">做得好！</string>
+    <string name="back">返回</string>
+    <string name="image_button_flask_description">烧瓶按钮</string>
+    <string name="image_button_laksa_description">叻沙按钮</string>
+    <!-- Cheng En-->
+    <string name="htp1">玩法</string>
+    <string name="htp2">从主页选择一个难度，1* 是最简单的，而 3* 是最高级的。</string>
+    <string name="htp3">选择其中一个八个可用主题来开始你的游戏。</string>
+    <string name="htp4">为了完成游戏，请收集所有正确选项的绿色勾号。</string>
+    <string name="htp5">错误的选项将被红色叉号和其声音效果标记。祝你好运，玩得开心！</string>
+    <string name="cutlery">餐具</string>
+    <string name="food">食物</string>
+    <string name="animals">动物</string>
+    <string name="livingRoom">客厅</string>
+    <string name="flower">花</string>
+    <string name="scenery">风景</string>
+    <string name="snacks">零食</string>
+    <string name="householdItems">家居物品</string>
+    <!-- Jin Yan-->
+    <string name="Armchair">扶手椅</string>
+    <string name="Bird_Cage">鸟笼</string>
+    <string name="Rose">玫瑰</string>
+    <string name="Dog">狗</string>
+    <string name="Clogs">木屐</string>
+    <string name="Spoon">勺子</string>
+    <string name="Parrot">鹦鹉</string>
+    <string name="DimSum">点心</string>
+    <string name="Tingkat">三层饭盒</string>
+    <string name="Mahjong">麻将</string>
+    <string name="Orchid">兰花</string>
+    <string name="Satay">沙爹</string>
+    <string name="GoldCoins">金币</string>
+    <string name="WeddingBasket">婚礼篮</string>
+</resources>

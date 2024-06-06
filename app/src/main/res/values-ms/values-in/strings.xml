@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Pasangan Nostalgia (FYP2024)</string>
+    <!-- Gabriel -->
+    <string name="Title">Pasangan Nostalgia</string>
+    <string name="easy">Mudah</string>
+    <string name="medium">Sedang</string>
+    <string name="hard">Sulit</string>
+    <string name="instructions">Cara Bermain</string>
+    <!-- HaiXuan-->
+    <string name="settings" tools:ignore="ExtraTranslation">Pengaturan</string>
+    <string name="lang" tools:ignore="ExtraTranslation">Bahasa</string>
+    <string name="langEN" tools:ignore="ExtraTranslation">English</string>
+    <string name="langCN" tools:ignore="ExtraTranslation">中文</string>
+    <string name="langIN" tools:ignore="ExtraTranslation">Bahasa</string>
+    <string name="langTA" tools:ignore="ExtraTranslation">தமிழ்</string>
+    <string name="homePage">Beranda</string>
+    <string name="KYDZWeb">Situs KYDZ</string>
+    <string name="chooseTheme">Pilih Tema</string>
+    <string name="start">Mulai!</string>
+    <string name="flask">Labu</string>
+    <string name="laksa">Laksa</string>
+    <string name="find">Temukan:</string>
+    <string name="chooseDiff">Pilih Kesulitan</string>
+    <string name="tryAgain">Coba Lagi!</string>
+    <string name="goodJob">Kerja Bagus!</string>
+    <string name="back">Kembali</string>
+    <string name="image_button_flask_description">Tombol Labu</string>
+    <string name="image_button_laksa_description">Tombol Laksa</string>
+    <!-- Cheng En-->
+    <string name="htp1">Cara Bermain</string>
+    <string name="htp2">Pilih kesulitan dari halaman beranda, 1* adalah yang paling mudah, sedangkan 3* adalah yang paling sulit.</string>
+    <string name="htp3">Pilih salah satu dari delapan tema yang tersedia untuk memulai permainan Anda.</string>
+    <string name="htp4">Untuk menyelesaikan permainan, kumpulkan semua tanda centang hijau untuk pilihan yang benar.</string>
+    <string name="htp5">Pilihan yang salah akan ditandai dengan tanda silang merah dan efek suara. Semoga beruntung dan bersenang-senanglah!</string>
+    <string name="cutlery">Peralatan Makan</string>
+    <string name="food">Makanan</string>
+    <string name="animals">Hewan</string>
+    <string name="livingRoom">Ruang Tamu</string>
+    <string name="flower">Bunga</string>
+    <string name="scenery">Pemandangan</string>
+    <string name="snacks">Camilan</string>
+    <string name="householdItems">Barang Rumah Tangga</string>
+    <!-- Jin Yan-->
+    <string name="Armchair">Kursi Berlengan</string>
+    <string name="Bird_Cage">Sangkar Burung</string>
+    <string name="Rose">Mawar</string>
+    <string name="Dog">Anjing</string>
+    <string name="Clogs">Sandal Kayu</string>
+    <string name="Spoon">Sendok</string>
+    <string name="Parrot">Burung Beo</string>
+    <string name="DimSum">Dim Sum</string>
+    <string name="Tingkat">Kotak Makan Bertingkat</string>
+    <string name="Mahjong">Mahjong</string>
+    <string name="Orchid">Anggrek</string>
+    <string name="Satay">Sate</string>
+    <string name="GoldCoins">Koin Emas</string>
+    <string name="WeddingBasket">Keranjang Pernikahan</string>
+</resources>

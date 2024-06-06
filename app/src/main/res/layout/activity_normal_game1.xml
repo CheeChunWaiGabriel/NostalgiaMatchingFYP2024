@@ -148,7 +148,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:src="@drawable/correct"
+                android:src="@drawable/wrong"
                 android:visibility="invisible" />
         </FrameLayout>
 
@@ -233,15 +233,14 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/birdcage" />
 
-            <ImageView
-                android:id="@+id/wrongImg4"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/wrong"
-                android:layout_gravity="center"
-                android:visibility="invisible"/>
-        </FrameLayout>
-
+        <ImageView
+            android:id="@+id/wrongImg4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/wrong"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+    </FrameLayout>
     </LinearLayout>
 
     <LinearLayout
