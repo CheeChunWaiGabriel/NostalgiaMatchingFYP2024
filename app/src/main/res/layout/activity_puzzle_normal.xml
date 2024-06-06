@@ -83,7 +83,8 @@
                     android:layout_marginRight="70dp"
                     android:layout_weight="0"
                     android:text="@string/cutlery"
-                    android:textSize="28sp" />
+                    android:textSize="28sp"
+                    android:textAlignment="center"/>
 
                 <TextView
                     android:id="@+id/textViewFood"
@@ -93,7 +94,8 @@
                     android:layout_weight="0"
                     android:layout_marginLeft="50dp"
                     android:text="@string/food"
-                    android:textSize="28sp" />
+                    android:textSize="28sp"
+                    android:textAlignment="center"/>
             </LinearLayout>
 
 
@@ -168,11 +170,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="70dp"
+                    android:layout_marginLeft="60dp"
                     android:layout_marginRight="80dp"
                     android:layout_weight="0"
                     android:text="@string/animals"
-                    android:textSize="28sp" />
+                    android:textSize="28sp"
+                    android:textAlignment="center"/>
 
                 <TextView
                     android:id="@+id/textViewLivingRoom"
@@ -180,9 +183,11 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginRight="50dp"
                     android:layout_weight="0"
                     android:text="@string/livingRoom"
-                    android:textSize="28sp" />
+                    android:textSize="28sp"
+                    android:textAlignment="center"/>
             </LinearLayout>
 
             <LinearLayout
@@ -259,7 +264,8 @@
                     android:layout_marginRight="80dp"
                     android:layout_weight="0"
                     android:text="@string/flower"
-                    android:textSize="28sp" />
+                    android:textSize="28sp"
+                    android:textAlignment="center"/>
 
                 <TextView
                     android:id="@+id/textViewScenery"
@@ -269,7 +275,8 @@
                     android:layout_weight="0"
                     android:layout_marginLeft="10dp"
                     android:text="@string/scenery"
-                    android:textSize="28sp" />
+                    android:textSize="28sp"
+                    android:textAlignment="center"/>
             </LinearLayout>
 
             <LinearLayout
@@ -346,7 +353,8 @@
                     android:layout_marginRight="70dp"
                     android:layout_weight="0"
                     android:text="@string/snacks"
-                    android:textSize="28sp" />
+                    android:textSize="28sp"
+                    android:textAlignment="center"/>
 
                 <TextView
                     android:id="@+id/textViewHouseholdItems"
@@ -355,7 +363,8 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_weight="0"
                     android:text="@string/householdItems"
-                    android:textSize="28sp" />
+                    android:textSize="28sp"
+                    android:textAlignment="center"/>
             </LinearLayout>
 
             <LinearLayout

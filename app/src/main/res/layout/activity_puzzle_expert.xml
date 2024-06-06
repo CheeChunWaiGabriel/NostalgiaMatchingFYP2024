@@ -85,7 +85,8 @@
                     android:layout_marginRight="70dp"
                     android:layout_weight="0"
                     android:text="@string/Parrot"
-                    android:textSize="28sp" />
+                    android:textSize="28sp"
+                    android:textAlignment="center"/>
 
                 <TextView
                     android:id="@+id/textViewdimsum"
@@ -95,7 +96,8 @@
                     android:layout_marginLeft="30dp"
                     android:layout_weight="0"
                     android:text="@string/DimSum"
-                    android:textSize="28sp" />
+                    android:textSize="28sp"
+                    android:textAlignment="center"/>
             </LinearLayout>
 
 
@@ -174,7 +176,8 @@
                     android:layout_marginRight="80dp"
                     android:layout_weight="0"
                     android:text="@string/Tingkat"
-                    android:textSize="28sp" />
+                    android:textSize="28sp"
+                    android:textAlignment="center"/>
 
                 <TextView
                     android:id="@+id/textViewMahjong"
@@ -184,7 +187,8 @@
                     android:layout_marginLeft="20dp"
                     android:layout_weight="0"
                     android:text="@string/Mahjong"
-                    android:textSize="28sp" />
+                    android:textSize="28sp"
+                    android:textAlignment="center"/>
             </LinearLayout>
 
             <LinearLayout
@@ -261,7 +265,8 @@
                     android:layout_marginRight="80dp"
                     android:layout_weight="0"
                     android:text="@string/Orchid"
-                    android:textSize="28sp" />
+                    android:textSize="28sp"
+                    android:textAlignment="center"/>
 
                 <TextView
                     android:id="@+id/textViewSatay"
@@ -271,7 +276,8 @@
                     android:layout_marginLeft="30dp"
                     android:layout_weight="0"
                     android:text="@string/Satay"
-                    android:textSize="28sp" />
+                    android:textSize="28sp"
+                    android:textAlignment="center"/>
             </LinearLayout>
 
             <LinearLayout
@@ -348,7 +354,8 @@
                     android:layout_marginRight="70dp"
                     android:layout_weight="0"
                     android:text="@string/GoldCoins"
-                    android:textSize="28sp" />
+                    android:textSize="28sp"
+                    android:textAlignment="center"/>
 
                 <TextView
                     android:id="@+id/textViewWeddingBaskets"
@@ -357,7 +364,8 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_weight="0"
                     android:text="@string/WeddingBasket"
-                    android:textSize="28sp" />
+                    android:textSize="28sp"
+                    android:textAlignment="center"/>
             </LinearLayout>
 
             <LinearLayout
