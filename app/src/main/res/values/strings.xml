@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">NostalgiaMatching(FYP2024)</string>
     <!-- Gabriel -->
-    <string name="Title">Nostalgia Matching</string>
+    <string name="Title">Nostalgic Match</string>
     <string name="easy">Easy</string>
     <string name="medium">Normal</string>
     <string name="hard">Expert</string>
     <string name="instructions">How To Play</string>
 
     <string name="settings">Settings</string>
-    <string name="lang">Bahasa</string>
+    <string name="lang">Language</string>
     <string name="langEN">English</string>
     <string name="langCN">中文</string>
     <string name="langIN">Bahasa</string>

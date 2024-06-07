@@ -8,17 +8,42 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.1"
+        android:layout_weight="0.2"
         android:background="@color/bgPurple"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/logo"
+            android:id="@+id/logoImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:paddingBottom="20dp"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/levelStar1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/logo" />
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:paddingBottom="20dp"
+            app:srcCompat="@drawable/star" />
+        <ImageView
+            android:id="@+id/levelStar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:paddingBottom="20dp"
+            app:srcCompat="@drawable/star" />
+
     </LinearLayout>
 
 
@@ -84,7 +109,9 @@
                     android:layout_weight="0"
                     android:text="@string/cutlery"
                     android:textSize="28sp"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    />
 
                 <TextView
                     android:id="@+id/textViewFood"
@@ -95,7 +122,8 @@
                     android:layout_marginLeft="50dp"
                     android:text="@string/food"
                     android:textSize="28sp"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
 
@@ -175,7 +203,8 @@
                     android:layout_weight="0"
                     android:text="@string/animals"
                     android:textSize="28sp"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/textViewLivingRoom"
@@ -187,7 +216,8 @@
                     android:layout_weight="0"
                     android:text="@string/livingRoom"
                     android:textSize="28sp"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
             <LinearLayout
@@ -265,7 +295,8 @@
                     android:layout_weight="0"
                     android:text="@string/flower"
                     android:textSize="28sp"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/textViewScenery"
@@ -276,7 +307,8 @@
                     android:layout_marginLeft="10dp"
                     android:text="@string/scenery"
                     android:textSize="28sp"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
             <LinearLayout
@@ -354,7 +386,8 @@
                     android:layout_weight="0"
                     android:text="@string/snacks"
                     android:textSize="28sp"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/textViewHouseholdItems"
@@ -364,7 +397,8 @@
                     android:layout_weight="0"
                     android:text="@string/householdItems"
                     android:textSize="28sp"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
             <LinearLayout
