@@ -97,26 +97,28 @@
 
                 <TextView
                     android:id="@+id/textViewFlask"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="70dp"
                     android:layout_marginRight="70dp"
-                    android:layout_weight="0"
+                    android:layout_weight="1"
                     android:text="@string/flask"
                     android:textSize="28sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:maxLines="1"/>
 
                 <TextView
                     android:id="@+id/textViewLaska"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_weight="0"
+                    android:layout_weight="1"
                     android:layout_marginLeft="50dp"
                     android:text="@string/laksa"
                     android:textSize="28sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:maxLines="1"/>
             </LinearLayout>
 
             <!-- Buttons -->
@@ -128,7 +130,7 @@
 
                 <Button
                     android:id="@+id/btnFlask"
-                    android:layout_width="150dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="20dp"
@@ -143,7 +145,7 @@
 
                 <Button
                     android:id="@+id/btnLaska"
-                    android:layout_width="150dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="20dp"
@@ -191,26 +193,28 @@
 
                 <TextView
                     android:id="@+id/textViewRose"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="70dp"
                     android:layout_marginRight="80dp"
-                    android:layout_weight="0"
+                    android:layout_weight="1"
                     android:text="@string/Rose"
                     android:textSize="28sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:maxLines="1"/>
 
                 <TextView
                     android:id="@+id/textViewDog"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_weight="0"
+                    android:layout_weight="1"
                     android:layout_marginLeft="50dp"
                     android:text="@string/Dog"
                     android:textSize="28sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:maxLines="1"/>
             </LinearLayout>
 
             <LinearLayout
@@ -220,7 +224,7 @@
 
                 <Button
                     android:id="@+id/btnRose"
-                    android:layout_width="150dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="20dp"
@@ -235,7 +239,7 @@
 
                 <Button
                     android:id="@+id/btnDog"
-                    android:layout_width="150dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="20dp"
@@ -280,26 +284,28 @@
 
                 <TextView
                     android:id="@+id/textViewclogs"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="70dp"
                     android:layout_marginRight="80dp"
-                    android:layout_weight="0"
+                    android:layout_weight="1"
                     android:text="@string/Clogs"
                     android:textSize="28sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:maxLines="1"/>
 
                 <TextView
                     android:id="@+id/textViewspoon"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_weight="0"
-                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="30dp"
                     android:text="@string/Spoon"
                     android:textSize="28sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:maxLines="1"/>
             </LinearLayout>
 
             <LinearLayout
@@ -309,7 +315,7 @@
 
                 <Button
                     android:id="@+id/btnClogs"
-                    android:layout_width="150dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="20dp"
@@ -324,7 +330,7 @@
 
                 <Button
                     android:id="@+id/btnSpoon"
-                    android:layout_width="150dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="20dp"
@@ -373,21 +379,23 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="50dp"
-                    android:layout_marginRight="70dp"
-                    android:layout_weight="0"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
                     android:text="@string/Armchair"
                     android:textSize="28sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:maxLines="1"/>
 
                 <TextView
                     android:id="@+id/textViewBirdCage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_weight="0"
+                    android:layout_weight="1"
                     android:text="@string/Bird_Cage"
                     android:textSize="28sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:maxLines="1"/>
             </LinearLayout>
 
             <LinearLayout
@@ -397,7 +405,7 @@
 
                 <Button
                     android:id="@+id/btnArmchair"
-                    android:layout_width="150dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="20dp"
@@ -412,7 +420,7 @@
 
                 <Button
                     android:id="@+id/btnBirdCage"
-                    android:layout_width="150dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="20dp"
