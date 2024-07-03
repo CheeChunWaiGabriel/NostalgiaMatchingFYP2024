@@ -147,26 +147,26 @@ public class EasyGame2Activity extends AppCompatActivity {
     private void undoLastAction() {
         EasyGame2Activity.Action lastAction = actionStack.pop();
         if (lastAction != null) {
-            if (lastAction.optionClicked == -1)  {
+            if (lastAction.optionClicked == -1) {
                 imgBtnWrong1.setBackground(null);
                 imgBtnWrong1.setClickable(true);
-            } else if (lastAction.optionClicked == -2){
+            } else if (lastAction.optionClicked == -2) {
                 imgBtnWrong2.setBackground(null);
                 imgBtnWrong2.setClickable(true);
             }
         }
     }
 
-    private void undoClickable(){
-        if (correct1 == true){
+    private void undoClickable() {
+        if (correct1 == true) {
             imgBtnCorrect2.setClickable(true);
             imgBtnWrong1.setClickable(true);
             imgBtnWrong2.setClickable(true);
-        } else if(correct2 == true){
+        } else if (correct2 == true) {
             imgBtnCorrect1.setClickable(true);
             imgBtnWrong1.setClickable(true);
             imgBtnWrong2.setClickable(true);
-        }else{
+        } else {
             imgBtnCorrect1.setClickable(true);
             imgBtnCorrect2.setClickable(true);
             imgBtnWrong1.setClickable(true);
@@ -174,20 +174,20 @@ public class EasyGame2Activity extends AppCompatActivity {
         }
     }
 
-    private void showCorrect(){
+    private void showCorrect() {
         gameRun.endGameEasy();
         correct.start();
         if (gameRun.getCorrectOption() == 1) {
             correctImg1.setVisibility(View.VISIBLE);
-        }else if (gameRun.getGameWin()) {
+        } else if (gameRun.getGameWin()) {
             correctImg2.setVisibility(View.VISIBLE);
             getGameResult();
         }
     }
 
-    private  void showWrong(){
+    private void showWrong() {
         wrong.start();
-        if (gameRun.getCorrectOption() == 1){
+        if (gameRun.getCorrectOption() == 1) {
             wrongImg2.setVisibility(View.VISIBLE);
         } else {
             wrongImg1.setVisibility(View.VISIBLE);
@@ -230,3 +230,4 @@ public class EasyGame2Activity extends AppCompatActivity {
         finish();
         startActivity(intent);
     }
+}
