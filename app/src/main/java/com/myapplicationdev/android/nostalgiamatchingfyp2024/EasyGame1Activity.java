@@ -13,6 +13,8 @@ import android.content.Intent;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Stack;
+
 public class EasyGame1Activity extends AppCompatActivity {
     private MediaPlayer buttonClick;
     private MediaPlayer correct;
@@ -27,11 +29,28 @@ public class EasyGame1Activity extends AppCompatActivity {
     ImageView wrongImg2;
     Button btnEndGame;
     Button btnBack;
+    ImageButton btnUndo;
     GameRun gameRun = new GameRun();
     Drawable redBG = ColorHelper.redBG(20, 10);
     Drawable greenBG = ColorHelper.greenBG(20, 10);
     String goodJob;
     String tryAgain;
+    Boolean correct1;
+    Boolean correct2;
+
+    private Stack<Action> actionStack = new Stack<>();
+
+    // Action class to encapsulate user actions
+    private static class Action {
+        int optionClicked; // 1 for correct1, 2 for correct2, -1 for wrong1, -2 for wrong2
+        boolean wasCorrect;
+
+        Action(int optionClicked, boolean wasCorrect) {
+            this.optionClicked = optionClicked;
+            this.wasCorrect = wasCorrect;
+        }
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,9 +70,13 @@ public class EasyGame1Activity extends AppCompatActivity {
 
         btnEndGame = findViewById(R.id.buttonResult);
         btnBack = findViewById(R.id.buttonBack);
+        btnUndo = findViewById(R.id.buttonUndo);
 
         goodJob = getString(R.string.goodJob);
         tryAgain = getString(R.string.tryAgain);
+
+        correct1 = false;
+        correct2 = false;
 
         buttonClick = MediaPlayer.create(this, R.raw.buttonclick);
         correct = MediaPlayer.create(this, R.raw.correct);
@@ -66,6 +89,8 @@ public class EasyGame1Activity extends AppCompatActivity {
                 gameRun.correctOptionFound();
                 showCorrect();
                 imgBtnCorrect1.setClickable(false);
+                actionStack.push(new Action(1, true));
+                correct1 = true;
             }
         });
         imgBtnCorrect2.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +100,8 @@ public class EasyGame1Activity extends AppCompatActivity {
                 gameRun.correctOptionFound();
                 showCorrect();
                 imgBtnCorrect2.setClickable(false);
+                actionStack.push(new Action(2, true));
+                correct2 = true;
             }
         });
         imgBtnWrong1.setOnClickListener(new View.OnClickListener() {
@@ -82,6 +109,7 @@ public class EasyGame1Activity extends AppCompatActivity {
             public void onClick(View v) {
                 imgBtnWrong1.setBackground(redBG);
                 showWrong();
+                actionStack.push(new Action(-1, false));
             }
         });
         imgBtnWrong2.setOnClickListener(new View.OnClickListener() {
@@ -89,6 +117,7 @@ public class EasyGame1Activity extends AppCompatActivity {
             public void onClick(View v) {
                 imgBtnWrong2.setBackground(redBG);
                 showWrong();
+                actionStack.push(new Action(-2, false));
             }
         });
 
@@ -100,6 +129,51 @@ public class EasyGame1Activity extends AppCompatActivity {
                 buttonClick.start();
             }
         });
+
+        btnUndo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!actionStack.isEmpty()) {
+                    undoLastAction();
+                    btnEndGame.setVisibility(View.INVISIBLE);
+                    btnUndo.setVisibility(View.INVISIBLE);
+                    wrongImg1.setVisibility(View.INVISIBLE);
+                    wrongImg2.setVisibility(View.INVISIBLE);
+                    undoClickable();
+                }
+            }
+        });
+
+    }
+
+    private void undoLastAction() {
+        Action lastAction = actionStack.pop();
+        if (lastAction != null) {
+            if (lastAction.optionClicked == -1)  {
+                imgBtnWrong1.setBackground(null);
+                imgBtnWrong1.setClickable(true);
+            } else if (lastAction.optionClicked == -2){
+                imgBtnWrong2.setBackground(null);
+                imgBtnWrong2.setClickable(true);
+            }
+        }
+    }
+
+    private void undoClickable(){
+        if (correct1 == true){
+            imgBtnCorrect2.setClickable(true);
+            imgBtnWrong1.setClickable(true);
+            imgBtnWrong2.setClickable(true);
+        } else if(correct2 == true){
+            imgBtnCorrect1.setClickable(true);
+            imgBtnWrong1.setClickable(true);
+            imgBtnWrong2.setClickable(true);
+        }else{
+            imgBtnCorrect1.setClickable(true);
+            imgBtnCorrect2.setClickable(true);
+            imgBtnWrong1.setClickable(true);
+            imgBtnWrong2.setClickable(true);
+        }
     }
 
     private void showCorrect(){
@@ -131,6 +205,7 @@ public class EasyGame1Activity extends AppCompatActivity {
             imgBtnCorrect2.setClickable(false);
             imgBtnWrong1.setClickable(false);
             imgBtnWrong2.setClickable(false);
+            btnUndo.setVisibility(View.GONE);
         } else {
             imgBtnCorrect1.setClickable(false);
             imgBtnCorrect2.setClickable(false);
@@ -145,6 +220,8 @@ public class EasyGame1Activity extends AppCompatActivity {
                     reloadActivity();
                 }
             });
+            btnUndo.setClickable(true);
+            btnUndo.setVisibility(View.VISIBLE);
         }
 
         btnEndGame.setVisibility(View.VISIBLE);
