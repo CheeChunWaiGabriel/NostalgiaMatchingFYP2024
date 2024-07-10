@@ -93,6 +93,7 @@
             android:text="@string/langIN"
             android:textColor="@color/black"
             android:textSize="28sp"
+            android:visibility="visible"
             app:backgroundTint="@null" />
 
         <Button
@@ -107,6 +108,7 @@
             android:text="@string/langTA"
             android:textColor="@color/black"
             android:textSize="28sp"
+            android:visibility="visible"
             app:backgroundTint="@null" />
 
     </LinearLayout>

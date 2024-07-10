@@ -54,7 +54,7 @@ public class EasyGame3Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_easy_game1);
+        setContentView(R.layout.activity_easy_game3);
 
         imgBtnCorrect1 = findViewById(R.id.imageButtonCorrect1);
         imgBtnCorrect2 = findViewById(R.id.imageButtonCorrect2);
