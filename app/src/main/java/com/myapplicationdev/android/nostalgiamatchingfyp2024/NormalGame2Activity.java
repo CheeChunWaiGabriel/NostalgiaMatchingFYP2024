@@ -2,6 +2,7 @@ package com.myapplicationdev.android.nostalgiamatchingfyp2024;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,10 +15,10 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.Stack;
+
 public class NormalGame2Activity extends AppCompatActivity {
 
-    Button btnEndGame;
-    Button btnBack;
     ImageButton imgBtnCorrect1;
     ImageButton imgBtnCorrect2;
     ImageButton imgBtnCorrect3;
@@ -36,11 +37,37 @@ public class NormalGame2Activity extends AppCompatActivity {
     ImageView ivWrong4;
     ImageView ivWrong5;
     ImageView ivWrong6;
+
+    Button btnEndGame;
+    Button btnBack;
+    ImageButton btnUndo;
+
     GameRun gameRun = new GameRun();
     Drawable redBG = ColorHelper.redBG(20, 10);
     Drawable greenBG = ColorHelper.greenBG(20, 10);
     String goodJob;
     String tryAgain;
+
+    Boolean correct1;
+    Boolean correct2;
+    Boolean correct3;
+
+    private MediaPlayer buttonClick;
+    private MediaPlayer correct;
+    private MediaPlayer wrong;
+
+    private Stack<NormalGame2Activity.Action> actionStack = new Stack<>();
+
+    // Action class to encapsulate user actions
+    private static class Action {
+        int optionClicked;
+        boolean wasCorrect;
+
+        Action(int optionClicked, boolean wasCorrect) {
+            this.optionClicked = optionClicked;
+            this.wasCorrect = wasCorrect;
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,9 +97,18 @@ public class NormalGame2Activity extends AppCompatActivity {
 
         btnEndGame = findViewById(R.id.buttonResult);
         btnBack = findViewById(R.id.buttonBack);
+        btnUndo = findViewById(R.id.buttonUndo);
 
         goodJob = getString(R.string.goodJob);
         tryAgain = getString(R.string.tryAgain);
+
+        correct1 = false;
+        correct2 = false;
+        correct3 = false;
+
+        buttonClick = MediaPlayer.create(this, R.raw.buttonclick);
+        correct = MediaPlayer.create(this, R.raw.correct);
+        wrong = MediaPlayer.create(this, R.raw.wrong);
 
         imgBtnCorrect1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,6 +118,8 @@ public class NormalGame2Activity extends AppCompatActivity {
                 showCorrect();
                 ivCorrect1.setVisibility(View.VISIBLE);
                 imgBtnCorrect1.setClickable(false);
+                actionStack.push(new NormalGame2Activity.Action(1, true));
+                correct1 = true;
             }
         });
         imgBtnCorrect2.setOnClickListener(new View.OnClickListener() {
@@ -92,6 +130,8 @@ public class NormalGame2Activity extends AppCompatActivity {
                 showCorrect();
                 ivCorrect2.setVisibility(View.VISIBLE);
                 imgBtnCorrect2.setClickable(false);
+                actionStack.push(new NormalGame2Activity.Action(2, true));
+                correct2 = true;
             }
         });
         imgBtnCorrect3.setOnClickListener(new View.OnClickListener() {
@@ -102,6 +142,8 @@ public class NormalGame2Activity extends AppCompatActivity {
                 showCorrect();
                 ivCorrect3.setVisibility(View.VISIBLE);
                 imgBtnCorrect3.setClickable(false);
+                actionStack.push(new NormalGame2Activity.Action(3, true));
+                correct3 = true;
             }
         });
 
@@ -111,6 +153,8 @@ public class NormalGame2Activity extends AppCompatActivity {
                 imgBtnWrong1.setBackground(redBG);
                 getGameResult();
                 ivWrong1.setVisibility(View.VISIBLE);
+                actionStack.push(new NormalGame2Activity.Action(-1, false));
+                wrong.start();
             }
         });
         imgBtnWrong2.setOnClickListener(new View.OnClickListener() {
@@ -119,6 +163,8 @@ public class NormalGame2Activity extends AppCompatActivity {
                 imgBtnWrong2.setBackground(redBG);
                 getGameResult();
                 ivWrong2.setVisibility(View.VISIBLE);
+                actionStack.push(new NormalGame2Activity.Action(-2, false));
+                wrong.start();
             }
         });
         imgBtnWrong3.setOnClickListener(new View.OnClickListener() {
@@ -127,6 +173,8 @@ public class NormalGame2Activity extends AppCompatActivity {
                 imgBtnWrong3.setBackground(redBG);
                 getGameResult();
                 ivWrong3.setVisibility(View.VISIBLE);
+                actionStack.push(new NormalGame2Activity.Action(-3, false));
+                wrong.start();
             }
         });
         imgBtnWrong4.setOnClickListener(new View.OnClickListener() {
@@ -135,6 +183,8 @@ public class NormalGame2Activity extends AppCompatActivity {
                 imgBtnWrong4.setBackground(redBG);
                 getGameResult();
                 ivWrong4.setVisibility(View.VISIBLE);
+                actionStack.push(new NormalGame2Activity.Action(-4, false));
+                wrong.start();
             }
         });
         imgBtnWrong5.setOnClickListener(new View.OnClickListener() {
@@ -143,6 +193,8 @@ public class NormalGame2Activity extends AppCompatActivity {
                 imgBtnWrong5.setBackground(redBG);
                 getGameResult();
                 ivWrong5.setVisibility(View.VISIBLE);
+                actionStack.push(new NormalGame2Activity.Action(-5, false));
+                wrong.start();
             }
         });
         imgBtnWrong6.setOnClickListener(new View.OnClickListener() {
@@ -151,6 +203,8 @@ public class NormalGame2Activity extends AppCompatActivity {
                 imgBtnWrong6.setBackground(redBG);
                 getGameResult();
                 ivWrong6.setVisibility(View.VISIBLE);
+                actionStack.push(new NormalGame2Activity.Action(-6, false));
+                wrong.start();
             }
         });
 
@@ -159,11 +213,71 @@ public class NormalGame2Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(NormalGame2Activity.this, NormalActivity.class);
                 startActivity(intent);
+                buttonClick.start();
+            }
+        });
+
+        btnUndo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!actionStack.isEmpty()) {
+                    undoLastAction();
+                    btnEndGame.setVisibility(View.INVISIBLE);
+                    btnUndo.setVisibility(View.INVISIBLE);
+                    ivWrong1.setVisibility(View.INVISIBLE);
+                    ivWrong2.setVisibility(View.INVISIBLE);
+                    ivWrong3.setVisibility(View.INVISIBLE);
+                    ivWrong4.setVisibility(View.INVISIBLE);
+                    ivWrong5.setVisibility(View.INVISIBLE);
+                    ivWrong6.setVisibility(View.INVISIBLE);
+                    undoClickable();
+                    buttonClick.start();
+                }
             }
         });
 
     }
+
+    private void undoLastAction() {
+        NormalGame2Activity.Action lastAction = actionStack.pop();
+        if (lastAction != null) {
+            if (lastAction.optionClicked == -1) {
+                imgBtnWrong1.setBackground(null);
+                imgBtnWrong1.setClickable(true);
+            }else if (lastAction.optionClicked == -2) {
+                imgBtnWrong2.setBackground(null);
+                imgBtnWrong2.setClickable(true);
+            }else if (lastAction.optionClicked == -3) {
+                imgBtnWrong3.setBackground(null);
+                imgBtnWrong3.setClickable(true);
+            }else if (lastAction.optionClicked == -4) {
+                imgBtnWrong4.setBackground(null);
+                imgBtnWrong4.setClickable(true);
+            }else if (lastAction.optionClicked == -5) {
+                imgBtnWrong5.setBackground(null);
+                imgBtnWrong5.setClickable(true);
+            }else if (lastAction.optionClicked == -6) {
+                imgBtnWrong6.setBackground(null);
+                imgBtnWrong6.setClickable(true);
+            }
+        }
+    }
+
+    private void undoClickable() {
+        imgBtnWrong1.setClickable(true);
+        imgBtnWrong2.setClickable(true);
+        imgBtnWrong3.setClickable(true);
+        imgBtnWrong4.setClickable(true);
+        imgBtnWrong5.setClickable(true);
+        imgBtnWrong6.setClickable(true);
+
+        if (!correct1) imgBtnCorrect1.setClickable(true);
+        if (!correct2) imgBtnCorrect2.setClickable(true);
+        if (!correct3) imgBtnCorrect3.setClickable(true);
+    }
+
     private void showCorrect(){
+        correct.start();
         gameRun.endGameExpert();
         if (gameRun.getGameWin()) {
             getGameResult();
@@ -174,15 +288,19 @@ public class NormalGame2Activity extends AppCompatActivity {
         if (gameRun.getGameWin()) {
             btnEndGame.setText(goodJob);
             btnEndGame.setClickable(false);
+            btnUndo.setVisibility(View.GONE);
         } else {
             btnEndGame.setText(tryAgain);
             btnEndGame.setClickable(true);
             btnEndGame.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    buttonClick.start();
                     reloadActivity();
                 }
             });
+            btnUndo.setClickable(true);
+            btnUndo.setVisibility(View.VISIBLE);
         }
         btnEndGame.setVisibility(View.VISIBLE);
     }

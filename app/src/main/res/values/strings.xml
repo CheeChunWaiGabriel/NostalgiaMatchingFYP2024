@@ -39,7 +39,7 @@
     <string name="flower">Flower</string>
     <string name="scenery">Scenery</string>
     <string name="snacks">Snacks</string>
-    <string name="householdItems">Household items</string>
+    <string name="householdItems">Household Items</string>
     <!-- Jin Yan-->
     <string name="Armchair">Armchair</string>
     <string name="Bird_Cage">Bird Cage</string>
@@ -62,9 +62,7 @@
     <string name="Find3Scenery">Find 3 Sceneries</string>
     <string name="Find3Snacks">Find 3 Snacks</string>
     <string name="Find3Animals">Find 3 Animals</string>
-    <string name="Find3item">Find 3 Items</string>
-
-
+    <string name="Find3item">Find 3 Household Items</string>
 
 
     <!-- Strings used for fragments for navigation -->

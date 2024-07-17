@@ -90,7 +90,8 @@
                     <TextView
                         android:id="@+id/textViewFlask"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="bottom|center_horizontal"
                         android:layout_gravity="center_horizontal"
                         android:layout_weight="1"
                         android:maxLines="1"
@@ -131,7 +132,8 @@
                     <TextView
                         android:id="@+id/textViewLaska"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="bottom|center_horizontal"
                         android:layout_gravity="center_horizontal"
                         android:layout_weight="1"
                         android:text="@string/laksa"
@@ -181,7 +183,8 @@
                     <TextView
                         android:id="@+id/textViewRose"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="bottom|center_horizontal"
                         android:layout_gravity="center_horizontal"
                         android:layout_weight="1"
                         android:maxLines="1"
@@ -222,7 +225,8 @@
                     <TextView
                         android:id="@+id/textViewDog"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="bottom|center_horizontal"
                         android:layout_gravity="center_horizontal"
                         android:layout_weight="1"
                         android:text="@string/Dog"
@@ -271,7 +275,8 @@
                     <TextView
                         android:id="@+id/textViewclogs"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="bottom|center_horizontal"
                         android:layout_gravity="center_horizontal"
                         android:layout_weight="1"
                         android:text="@string/Clogs"
@@ -311,7 +316,8 @@
                     <TextView
                         android:id="@+id/textViewspoon"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="bottom|center_horizontal"
                         android:layout_gravity="center_horizontal"
                         android:layout_weight="1"
                         android:text="@string/Spoon"
@@ -333,10 +339,6 @@
                 </LinearLayout>
 
             </LinearLayout>
-
-
-
-
 
 
             <LinearLayout
@@ -364,7 +366,8 @@
                     <TextView
                         android:id="@+id/textViewArmChair"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="bottom|center_horizontal"
                         android:layout_gravity="center_horizontal"
                         android:layout_weight="1"
                         android:text="@string/Armchair"
@@ -404,7 +407,8 @@
                     <TextView
                         android:id="@+id/textViewBirdCage"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="bottom|center_horizontal"
                         android:layout_gravity="center_horizontal"
                         android:layout_weight="1"
                         android:text="@string/Bird_Cage"
@@ -447,7 +451,6 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         app:backgroundTint="@null" />
-
 
     <View
         android:layout_width="match_parent"

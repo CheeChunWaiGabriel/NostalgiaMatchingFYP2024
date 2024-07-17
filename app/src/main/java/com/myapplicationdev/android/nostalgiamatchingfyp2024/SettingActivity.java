@@ -3,6 +3,7 @@ package com.myapplicationdev.android.nostalgiamatchingfyp2024;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +22,8 @@ public class SettingActivity extends AppCompatActivity {
     Button btnlangBA;
     Button btnlangTA;
 
+    private MediaPlayer buttonClick;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,12 +39,14 @@ public class SettingActivity extends AppCompatActivity {
         btnlangBA = findViewById(R.id.buttonLanguageBA);
         btnlangTA = findViewById(R.id.buttonLanguageTA);
 
+        buttonClick = MediaPlayer.create(this, R.raw.buttonclick);
 
         btnHomePage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SettingActivity.this, MainActivity.class);
                 startActivity(intent);
+                buttonClick.start();
             }
         });
 
@@ -50,6 +55,7 @@ public class SettingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Intent. ACTION_VIEW, Uri.parse("https://kydz.com.sg/"));
                 startActivity(intent);
+                buttonClick.start();
             }
         });
 
@@ -59,6 +65,7 @@ public class SettingActivity extends AppCompatActivity {
                 LanguageHelper.setLanguage(SettingActivity.this, "en");
                 // Refresh activity to apply changes
                 recreate();
+                buttonClick.start();
             }
         });
         btnlangCN.setOnClickListener(new View.OnClickListener() {
@@ -67,6 +74,7 @@ public class SettingActivity extends AppCompatActivity {
                 LanguageHelper.setLanguage(SettingActivity.this, "zh");
                 // Refresh activity to apply changes
                 recreate();
+                buttonClick.start();
             }
         });
         btnlangBA.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +83,7 @@ public class SettingActivity extends AppCompatActivity {
                 LanguageHelper.setLanguage(SettingActivity.this, "in");
                 // Refresh activity to apply changes
                 recreate();
+                buttonClick.start();
             }
         });
         btnlangTA.setOnClickListener(new View.OnClickListener() {
@@ -83,6 +92,7 @@ public class SettingActivity extends AppCompatActivity {
                 LanguageHelper.setLanguage(SettingActivity.this, "ta");
                 // Refresh activity to apply changes
                 recreate();
+                buttonClick.start();
             }
         });
     }

@@ -2,6 +2,7 @@ package com.myapplicationdev.android.nostalgiamatchingfyp2024;
 
 import android.content.Intent;
 import android.icu.lang.UCharacter;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,7 @@ public class EasyActivity extends AppCompatActivity {
     Button btnPuzzle7;
     Button btnPuzzle8;
 
+    private MediaPlayer buttonClick;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +39,14 @@ public class EasyActivity extends AppCompatActivity {
         btnPuzzle7 = findViewById(R.id.btnArmchair);
         btnPuzzle8 = findViewById(R.id.btnBirdCage);
 
+        buttonClick = MediaPlayer.create(this, R.raw.buttonclick);
+
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(EasyActivity.this, MainActivity.class);
                 startActivity(intent);
+                buttonClick.start();
             }
         });
 
@@ -50,6 +55,7 @@ public class EasyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(EasyActivity.this, EasyGame1Activity.class);
                 startActivity(intent);
+                buttonClick.start();
             }
         });
 
@@ -58,6 +64,7 @@ public class EasyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(EasyActivity.this, EasyGame2Activity.class);
                 startActivity(intent);
+                buttonClick.start();
             }
         });
 
@@ -66,6 +73,7 @@ public class EasyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(EasyActivity.this, EasyGame3Activity.class);
                 startActivity(intent);
+                buttonClick.start();
             }
         });
 
@@ -74,6 +82,7 @@ public class EasyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(EasyActivity.this, EasyGame4Activity.class);
                 startActivity(intent);
+                buttonClick.start();
             }
         });
 
@@ -82,6 +91,7 @@ public class EasyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(EasyActivity.this, EasyGame5Activity.class);
                 startActivity(intent);
+                buttonClick.start();
             }
         });
 
@@ -90,6 +100,7 @@ public class EasyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(EasyActivity.this, EasyGame6Activity.class);
                 startActivity(intent);
+                buttonClick.start();
             }
         });
 
@@ -98,6 +109,7 @@ public class EasyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(EasyActivity.this, EasyGame7Activity.class);
                 startActivity(intent);
+                buttonClick.start();
             }
         });
 
@@ -106,6 +118,7 @@ public class EasyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(EasyActivity.this, EasyGame8Activity.class);
                 startActivity(intent);
+                buttonClick.start();
             }
         });
     }
