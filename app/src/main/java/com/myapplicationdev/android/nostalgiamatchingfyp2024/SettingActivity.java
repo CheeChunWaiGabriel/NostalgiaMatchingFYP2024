@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,6 +22,9 @@ public class SettingActivity extends AppCompatActivity {
     Button btnlangCN;
     Button btnlangBA;
     Button btnlangTA;
+
+    ImageButton btnRefresh;
+    Boolean langFour;
 
     private MediaPlayer buttonClick;
 
@@ -39,6 +43,9 @@ public class SettingActivity extends AppCompatActivity {
         btnlangBA = findViewById(R.id.buttonLanguageBA);
         btnlangTA = findViewById(R.id.buttonLanguageTA);
 
+        btnRefresh = findViewById(R.id.imageButtonRefresh);
+        langFour = true;
+
         buttonClick = MediaPlayer.create(this, R.raw.buttonclick);
 
         btnHomePage.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +54,22 @@ public class SettingActivity extends AppCompatActivity {
                 Intent intent = new Intent(SettingActivity.this, MainActivity.class);
                 startActivity(intent);
                 buttonClick.start();
+            }
+        });
+
+        btnRefresh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonClick.start();
+                if (langFour == true){
+                    langFour = false;
+                    btnlangBA.setVisibility(View.GONE);
+                    btnlangTA.setVisibility(View.GONE);
+                } else{
+                    langFour = true;
+                    btnlangBA.setVisibility(View.VISIBLE);
+                    btnlangTA.setVisibility(View.VISIBLE);
+                }
             }
         });
 
