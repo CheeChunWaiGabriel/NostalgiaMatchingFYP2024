@@ -53,6 +53,9 @@ public class EasyGame2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        String savedLanguage = LanguageHelper.getLanguage(this);
+        LanguageHelper.setLanguage(this, savedLanguage);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_easy_game2);
 
