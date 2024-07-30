@@ -1,6 +1,7 @@
 package com.myapplicationdev.android.nostalgiamatchingfyp2024;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -274,6 +275,7 @@ public class ExpertGame6Activity extends AppCompatActivity {
         if (gameRun.getGameWin()) {
             btnEndGame.setText(goodJob);
             btnEndGame.setClickable(false);
+            btnEndGame.setBackgroundColor(Color.WHITE);
             btnUndo.setVisibility(View.GONE);
         } else {
             btnEndGame.setText(tryAgain);
