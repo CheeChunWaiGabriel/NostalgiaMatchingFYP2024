@@ -76,21 +76,21 @@
         android:layout_weight="0"
         android:orientation="horizontal">
 
-        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <FrameLayout
             android:layout_width="70dp"
             android:layout_height="80dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
 
-        <ImageButton
-            android:id="@+id/imageButtonNormalWrong1"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
-            android:layout_marginRight="5dp"
-            android:layout_weight="1"
-            android:background="@color/white"
-            android:scaleType="centerInside"
-            android:src="@drawable/dial_up_telephone"/>
+            <ImageButton
+                android:id="@+id/imageButtonNormalWrong1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="centerInside"
+                android:src="@drawable/dial_up_telephone" />
             <ImageView
                 android:id="@+id/WrongImg1Img1"
                 android:layout_width="match_parent"
@@ -100,20 +100,21 @@
                 android:visibility="invisible" />
         </FrameLayout>
 
-        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <FrameLayout
             android:layout_width="70dp"
             android:layout_height="80dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
-        <ImageButton
-            android:id="@+id/imageButtonNormalWrong2"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:background="@color/white"
-            android:scaleType="centerInside"
-            android:src="@drawable/yellow_flower" />
+
+            <ImageButton
+                android:id="@+id/imageButtonNormalWrong2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="centerInside"
+                android:src="@drawable/yellow_flower" />
             <ImageView
                 android:id="@+id/wrongImg2"
                 android:layout_width="match_parent"
@@ -123,20 +124,21 @@
                 android:visibility="invisible" />
         </FrameLayout>
 
-        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <FrameLayout
             android:layout_width="70dp"
             android:layout_height="80dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
-        <ImageButton
-            android:id="@+id/imageButtonNormalCorrect1"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:background="@color/white"
-            android:scaleType="centerInside"
-            android:src="@drawable/parrot" />
+
+            <ImageButton
+                android:id="@+id/imageButtonNormalCorrect1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="centerInside"
+                android:src="@drawable/parrot" />
             <ImageView
                 android:id="@+id/correctImg1"
                 android:layout_width="match_parent"
@@ -158,20 +160,20 @@
         android:layout_weight="0"
         android:orientation="horizontal">
         <FrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="70dp"
             android:layout_height="80dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
-        <ImageButton
-            android:id="@+id/imageButtonNormalWrong3"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
-            android:layout_marginRight="5dp"
-            android:layout_weight="1"
-            android:background="@color/white"
-            android:scaleType="centerInside"
-            android:src="@drawable/ang_ku_kueh" />
+
+            <ImageButton
+                android:id="@+id/imageButtonNormalWrong3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="centerInside"
+                android:src="@drawable/ang_ku_kueh" />
             <ImageView
                 android:id="@+id/wrongImg3"
                 android:layout_width="match_parent"
@@ -182,20 +184,20 @@
         </FrameLayout>
 
         <FrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="70dp"
             android:layout_height="80dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
-        <ImageButton
-            android:id="@+id/imageButtonNormalCorrect2"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:background="@color/white"
-            android:scaleType="centerInside"
-            android:src="@drawable/dog" />
+
+            <ImageButton
+                android:id="@+id/imageButtonNormalCorrect2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="centerInside"
+                android:src="@drawable/dog" />
             <ImageView
                 android:id="@+id/correctImg2"
                 android:layout_width="match_parent"
@@ -206,20 +208,20 @@
         </FrameLayout>
 
         <FrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="70dp"
             android:layout_height="80dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
-        <ImageButton
-            android:id="@+id/imageButtonNormalWrong4"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:background="@color/white"
-            android:scaleType="centerInside"
-            android:src="@drawable/wedding_basket" />
+
+            <ImageButton
+                android:id="@+id/imageButtonNormalWrong4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="centerInside"
+                android:src="@drawable/wedding_basket" />
             <ImageView
                 android:id="@+id/wrongImg4"
                 android:layout_width="match_parent"
@@ -241,20 +243,20 @@
         android:layout_weight="0"
         android:orientation="horizontal">
         <FrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="70dp"
             android:layout_height="80dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
-        <ImageButton
-            android:id="@+id/imageButtonNormalCorrect3"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
-            android:layout_marginRight="5dp"
-            android:layout_weight="1"
-            android:background="@color/white"
-            android:scaleType="centerInside"
-            android:src="@drawable/cat" />
+
+            <ImageButton
+                android:id="@+id/imageButtonNormalCorrect3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="centerInside"
+                android:src="@drawable/cat" />
             <ImageView
                 android:id="@+id/correctImg3"
                 android:layout_width="match_parent"
@@ -265,20 +267,20 @@
         </FrameLayout>
 
         <FrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="70dp"
             android:layout_height="80dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
-        <ImageButton
-            android:id="@+id/imageButtonNormalWrong5"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:background="@color/white"
-            android:scaleType="centerInside"
-            android:src="@drawable/clogs" />
+
+            <ImageButton
+                android:id="@+id/imageButtonNormalWrong5"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="centerInside"
+                android:src="@drawable/clogs" />
             <ImageView
                 android:id="@+id/wrongImg5"
                 android:layout_width="match_parent"
@@ -289,20 +291,20 @@
         </FrameLayout>
 
         <FrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="70dp"
             android:layout_height="80dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
-        <ImageButton
-            android:id="@+id/imageButtonNormalWrong6"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:background="@color/white"
-            android:scaleType="centerInside"
-            android:src="@drawable/satay" />
+
+            <ImageButton
+                android:id="@+id/imageButtonNormalWrong6"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="centerInside"
+                android:src="@drawable/satay" />
 
             <ImageView
                 android:id="@+id/wrongImg6"

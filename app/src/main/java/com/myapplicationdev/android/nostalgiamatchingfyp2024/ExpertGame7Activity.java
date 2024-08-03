@@ -47,6 +47,7 @@ public class ExpertGame7Activity extends AppCompatActivity {
     private MediaPlayer buttonClick;
     private MediaPlayer correct;
     private MediaPlayer wrong;
+    private MediaPlayer cheer;
 
     private Stack<ExpertGame7Activity.Action> actionStack = new Stack<>();
 
@@ -101,6 +102,7 @@ public class ExpertGame7Activity extends AppCompatActivity {
         buttonClick = MediaPlayer.create(this, R.raw.buttonclick);
         correct = MediaPlayer.create(this, R.raw.correct);
         wrong = MediaPlayer.create(this, R.raw.wrong);
+        cheer = MediaPlayer.create(this, R.raw.cheering);
 
         imgBtnCorrect1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -277,6 +279,7 @@ public class ExpertGame7Activity extends AppCompatActivity {
             btnEndGame.setClickable(false);
             btnEndGame.setBackgroundColor(Color.WHITE);
             btnUndo.setVisibility(View.GONE);
+            cheer.start();
         } else {
             btnEndGame.setText(tryAgain);
             btnEndGame.setClickable(true);

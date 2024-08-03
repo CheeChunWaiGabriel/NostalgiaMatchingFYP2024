@@ -19,6 +19,8 @@ public class EasyGame3Activity extends AppCompatActivity {
     private MediaPlayer buttonClick;
     private MediaPlayer correct;
     private MediaPlayer wrong;
+    private MediaPlayer cheer;
+
     ImageButton imgBtnCorrect1;
     ImageButton imgBtnCorrect2;
     ImageButton imgBtnWrong1;
@@ -83,6 +85,7 @@ public class EasyGame3Activity extends AppCompatActivity {
         buttonClick = MediaPlayer.create(this, R.raw.buttonclick);
         correct = MediaPlayer.create(this, R.raw.correct);
         wrong = MediaPlayer.create(this, R.raw.wrong);
+        cheer = MediaPlayer.create(this, R.raw.cheering);
 
         imgBtnCorrect1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -209,6 +212,7 @@ public class EasyGame3Activity extends AppCompatActivity {
             imgBtnWrong1.setClickable(false);
             imgBtnWrong2.setClickable(false);
             btnUndo.setVisibility(View.GONE);
+            cheer.start();
         } else {
             imgBtnCorrect1.setClickable(false);
             imgBtnCorrect2.setClickable(false);

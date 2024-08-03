@@ -79,15 +79,16 @@
             android:layout_height="80dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
+
             <ImageButton
                 android:id="@+id/imageButtonNormalWrong1"
-                android:layout_width="70dp"
+                android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
                 android:background="@color/white"
                 android:scaleType="centerInside"
-                android:src="@drawable/butterfly"/>
+                android:src="@drawable/butterfly" />
             <ImageView
                 android:id="@+id/wrongImg1"
                 android:layout_width="match_parent"
@@ -102,9 +103,10 @@
             android:layout_height="80dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
+
             <ImageButton
                 android:id="@+id/imageButtonNormalWrong2"
-                android:layout_width="70dp"
+                android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
@@ -125,9 +127,10 @@
             android:layout_height="80dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
+
             <ImageButton
                 android:id="@+id/imageButtonNormalCorrect1"
-                android:layout_width="70dp"
+                android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
@@ -160,9 +163,10 @@
             android:layout_height="80dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
+
             <ImageButton
                 android:id="@+id/imageButtonNormalWrong3"
-                android:layout_width="70dp"
+                android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
@@ -183,9 +187,10 @@
             android:layout_height="80dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
+
             <ImageButton
                 android:id="@+id/imageButtonNormalCorrect2"
-                android:layout_width="70dp"
+                android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
@@ -206,9 +211,10 @@
             android:layout_height="80dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
+
             <ImageButton
                 android:id="@+id/imageButtonNormalWrong4"
-                android:layout_width="70dp"
+                android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
@@ -241,9 +247,10 @@
             android:layout_height="80dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
+
             <ImageButton
                 android:id="@+id/imageButtonNormalCorrect3"
-                android:layout_width="70dp"
+                android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
@@ -264,9 +271,10 @@
             android:layout_height="80dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
+
             <ImageButton
                 android:id="@+id/imageButtonNormalWrong5"
-                android:layout_width="70dp"
+                android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
@@ -287,9 +295,10 @@
             android:layout_height="80dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
+
             <ImageButton
                 android:id="@+id/imageButtonNormalWrong6"
-                android:layout_width="70dp"
+                android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"

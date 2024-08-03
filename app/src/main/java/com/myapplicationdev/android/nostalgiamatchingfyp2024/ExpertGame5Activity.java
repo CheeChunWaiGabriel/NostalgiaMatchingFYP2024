@@ -3,6 +3,7 @@ package com.myapplicationdev.android.nostalgiamatchingfyp2024;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.media.DrmInitData;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -47,6 +48,7 @@ public class ExpertGame5Activity extends AppCompatActivity {
     private MediaPlayer buttonClick;
     private MediaPlayer correct;
     private MediaPlayer wrong;
+    private MediaPlayer cheer;
 
     private Stack<ExpertGame5Activity.Action> actionStack = new Stack<>();
 
@@ -101,6 +103,7 @@ public class ExpertGame5Activity extends AppCompatActivity {
         buttonClick = MediaPlayer.create(this, R.raw.buttonclick);
         correct = MediaPlayer.create(this, R.raw.correct);
         wrong = MediaPlayer.create(this, R.raw.wrong);
+        cheer = MediaPlayer.create(this, R.raw.cheering);
 
         imgBtnCorrect1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -277,6 +280,7 @@ public class ExpertGame5Activity extends AppCompatActivity {
             btnEndGame.setClickable(false);
             btnEndGame.setBackgroundColor(Color.WHITE);
             btnUndo.setVisibility(View.GONE);
+            cheer.start();
         } else {
             btnEndGame.setText(tryAgain);
             btnEndGame.setClickable(true);
