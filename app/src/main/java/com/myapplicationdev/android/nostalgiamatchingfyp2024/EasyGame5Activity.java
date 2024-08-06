@@ -32,6 +32,7 @@ public class EasyGame5Activity extends AppCompatActivity {
     Button btnEndGame;
     Button btnBack;
     ImageButton btnUndo;
+    Button btnNext;
     GameRun gameRun = new GameRun();
     Drawable redBG = ColorHelper.redBG(20, 10);
     Drawable greenBG = ColorHelper.greenBG(20, 10);
@@ -76,6 +77,7 @@ public class EasyGame5Activity extends AppCompatActivity {
         btnEndGame = findViewById(R.id.buttonResult);
         btnBack = findViewById(R.id.buttonBack);
         btnUndo = findViewById(R.id.buttonUndo);
+        btnNext = findViewById(R.id.buttonNext);
 
         goodJob = getString(R.string.goodJob);
         tryAgain = getString(R.string.tryAgain);
@@ -150,6 +152,15 @@ public class EasyGame5Activity extends AppCompatActivity {
             }
         });
 
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EasyGame5Activity.this, EasyGame6Activity.class);
+                startActivity(intent);
+                buttonClick.start();
+            }
+        });
+
     }
 
     private void undoLastAction() {
@@ -213,6 +224,7 @@ public class EasyGame5Activity extends AppCompatActivity {
             imgBtnWrong1.setClickable(false);
             imgBtnWrong2.setClickable(false);
             btnUndo.setVisibility(View.GONE);
+            btnNext.setVisibility(View.VISIBLE);
             cheer.start();
         } else {
             imgBtnCorrect1.setClickable(false);

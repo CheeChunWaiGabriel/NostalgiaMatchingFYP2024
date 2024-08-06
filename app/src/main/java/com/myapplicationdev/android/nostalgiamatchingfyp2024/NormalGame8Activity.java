@@ -44,8 +44,6 @@ public class NormalGame8Activity extends AppCompatActivity {
     ImageButton btnUndo;
 
     GameRun gameRun = new GameRun();
-    Drawable redBG = ColorHelper.redBG(20, 10);
-    Drawable greenBG = ColorHelper.greenBG(20, 10);
     String goodJob;
     String tryAgain;
 
@@ -118,7 +116,6 @@ public class NormalGame8Activity extends AppCompatActivity {
         imgBtnCorrect1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBtnCorrect1.setBackground(greenBG);
                 gameRun.correctOptionFound();
                 showCorrect();
                 ivCorrect1.setVisibility(View.VISIBLE);
@@ -130,7 +127,6 @@ public class NormalGame8Activity extends AppCompatActivity {
         imgBtnCorrect2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBtnCorrect2.setBackground(greenBG);
                 gameRun.correctOptionFound();
                 showCorrect();
                 ivCorrect2.setVisibility(View.VISIBLE);
@@ -142,7 +138,6 @@ public class NormalGame8Activity extends AppCompatActivity {
         imgBtnCorrect3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBtnCorrect3.setBackground(greenBG);
                 gameRun.correctOptionFound();
                 showCorrect();
                 ivCorrect3.setVisibility(View.VISIBLE);
@@ -155,7 +150,6 @@ public class NormalGame8Activity extends AppCompatActivity {
         imgBtnWrong1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBtnWrong1.setBackground(redBG);
                 getGameResult();
                 ivWrong1.setVisibility(View.VISIBLE);
                 actionStack.push(new NormalGame8Activity.Action(-1, false));
@@ -165,7 +159,6 @@ public class NormalGame8Activity extends AppCompatActivity {
         imgBtnWrong2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBtnWrong2.setBackground(redBG);
                 getGameResult();
                 ivWrong2.setVisibility(View.VISIBLE);
                 actionStack.push(new NormalGame8Activity.Action(-2, false));
@@ -175,7 +168,6 @@ public class NormalGame8Activity extends AppCompatActivity {
         imgBtnWrong3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBtnWrong3.setBackground(redBG);
                 getGameResult();
                 ivWrong3.setVisibility(View.VISIBLE);
                 actionStack.push(new NormalGame8Activity.Action(-3, false));
@@ -185,7 +177,6 @@ public class NormalGame8Activity extends AppCompatActivity {
         imgBtnWrong4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBtnWrong4.setBackground(redBG);
                 getGameResult();
                 ivWrong4.setVisibility(View.VISIBLE);
                 actionStack.push(new NormalGame8Activity.Action(-4, false));
@@ -195,7 +186,6 @@ public class NormalGame8Activity extends AppCompatActivity {
         imgBtnWrong5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBtnWrong5.setBackground(redBG);
                 getGameResult();
                 ivWrong5.setVisibility(View.VISIBLE);
                 actionStack.push(new NormalGame8Activity.Action(-5, false));
@@ -205,7 +195,6 @@ public class NormalGame8Activity extends AppCompatActivity {
         imgBtnWrong6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBtnWrong6.setBackground(redBG);
                 getGameResult();
                 ivWrong6.setVisibility(View.VISIBLE);
                 actionStack.push(new NormalGame8Activity.Action(-6, false));

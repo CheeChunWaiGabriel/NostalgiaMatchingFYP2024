@@ -1,6 +1,11 @@
 package com.myapplicationdev.android.nostalgiamatchingfyp2024;
 
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.LayerDrawable;
@@ -10,7 +15,7 @@ public class ColorHelper {
         // Create the inner rectangle with solid white color
         GradientDrawable innerRect = new GradientDrawable();
         innerRect.setShape(GradientDrawable.RECTANGLE);
-        innerRect.setColor(Color.WHITE);
+        innerRect.setColor(Color.TRANSPARENT);
 
         GradientDrawable outerRect = new GradientDrawable();
         outerRect.setShape(GradientDrawable.RECTANGLE);
@@ -29,7 +34,7 @@ public class ColorHelper {
         // Create the inner rectangle with solid white color
         GradientDrawable innerRect = new GradientDrawable();
         innerRect.setShape(GradientDrawable.RECTANGLE);
-        innerRect.setColor(Color.WHITE);
+        innerRect.setColor(Color.TRANSPARENT);
 
         GradientDrawable outerRect = new GradientDrawable();
         outerRect.setShape(GradientDrawable.RECTANGLE);
@@ -42,5 +47,32 @@ public class ColorHelper {
         layerDrawable.setLayerInset(1, innerPadding, innerPadding, innerPadding, innerPadding); // Set the inset for the inner rectangle
 
         return layerDrawable;
+    }
+
+    public static Drawable createGreenRectangleWithTransparentCenter(Context context, int width, int height, int outerPadding, int innerSize) {
+        Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+
+        // Paint for the outer rectangle
+        Paint outerPaint = new Paint();
+        outerPaint.setColor(Color.GREEN);
+        outerPaint.setStyle(Paint.Style.FILL);
+
+        // Paint for the inner transparent rectangle
+        Paint innerPaint = new Paint();
+        innerPaint.setColor(Color.TRANSPARENT);
+
+        // Draw outer rectangle
+        canvas.drawRect(0, 0, width, height, outerPaint);
+
+        // Draw inner transparent rectangle
+        int innerLeft = outerPadding;
+        int innerTop = outerPadding;
+        int innerRight = width - outerPadding;
+        int innerBottom = height - outerPadding;
+
+        canvas.drawRect(innerLeft, innerTop, innerRight, innerBottom, innerPaint);
+
+        return new BitmapDrawable(context.getResources(), bitmap);
     }
 }

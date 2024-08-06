@@ -35,6 +35,7 @@ public class ExpertGame5Activity extends AppCompatActivity {
     ImageView wrongImg3;
     Button btnEndGame;
     Button btnBack;
+    Button btnNext;
     ImageButton btnUndo;
     GameRun gameRun = new GameRun();
     Drawable redBG = ColorHelper.redBG(20, 10);
@@ -92,6 +93,7 @@ public class ExpertGame5Activity extends AppCompatActivity {
         btnEndGame = findViewById(R.id.buttonResult);
         btnBack = findViewById(R.id.buttonBack);
         btnUndo = findViewById(R.id.buttonUndo);
+        btnNext = findViewById(R.id.buttonNext);
 
         goodJob = getString(R.string.goodJob);
         tryAgain = getString(R.string.tryAgain);
@@ -210,6 +212,15 @@ public class ExpertGame5Activity extends AppCompatActivity {
             }
         });
 
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ExpertGame5Activity.this, ExpertGame6Activity.class);
+                startActivity(intent);
+                buttonClick.start();
+            }
+        });
+
     }
 
     private void undoLastAction() {
@@ -280,6 +291,7 @@ public class ExpertGame5Activity extends AppCompatActivity {
             btnEndGame.setClickable(false);
             btnEndGame.setBackgroundColor(Color.WHITE);
             btnUndo.setVisibility(View.GONE);
+            btnNext.setVisibility(View.VISIBLE);
             cheer.start();
         } else {
             btnEndGame.setText(tryAgain);

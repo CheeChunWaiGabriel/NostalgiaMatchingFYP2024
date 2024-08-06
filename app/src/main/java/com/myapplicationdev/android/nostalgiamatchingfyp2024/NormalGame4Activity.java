@@ -42,10 +42,9 @@ public class NormalGame4Activity extends AppCompatActivity {
     Button btnEndGame;
     Button btnBack;
     ImageButton btnUndo;
+    Button btnNext;
 
     GameRun gameRun = new GameRun();
-    Drawable redBG = ColorHelper.redBG(20, 10);
-    Drawable greenBG = ColorHelper.greenBG(20, 10);
     String goodJob;
     String tryAgain;
 
@@ -103,6 +102,7 @@ public class NormalGame4Activity extends AppCompatActivity {
         btnEndGame = findViewById(R.id.buttonResult);
         btnBack = findViewById(R.id.buttonBack);
         btnUndo = findViewById(R.id.buttonUndo);
+        btnNext = findViewById(R.id.buttonNext);
 
         goodJob = getString(R.string.goodJob);
         tryAgain = getString(R.string.tryAgain);
@@ -119,7 +119,6 @@ public class NormalGame4Activity extends AppCompatActivity {
         imgBtnCorrect1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBtnCorrect1.setBackground(greenBG);
                 gameRun.correctOptionFound();
                 showCorrect();
                 ivCorrect1.setVisibility(View.VISIBLE);
@@ -131,7 +130,6 @@ public class NormalGame4Activity extends AppCompatActivity {
         imgBtnCorrect2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBtnCorrect2.setBackground(greenBG);
                 gameRun.correctOptionFound();
                 showCorrect();
                 ivCorrect2.setVisibility(View.VISIBLE);
@@ -143,7 +141,6 @@ public class NormalGame4Activity extends AppCompatActivity {
         imgBtnCorrect3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBtnCorrect3.setBackground(greenBG);
                 gameRun.correctOptionFound();
                 showCorrect();
                 ivCorrect3.setVisibility(View.VISIBLE);
@@ -156,7 +153,6 @@ public class NormalGame4Activity extends AppCompatActivity {
         imgBtnWrong1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBtnWrong1.setBackground(redBG);
                 getGameResult();
                 ivWrong1.setVisibility(View.VISIBLE);
                 actionStack.push(new NormalGame4Activity.Action(-1, false));
@@ -166,7 +162,6 @@ public class NormalGame4Activity extends AppCompatActivity {
         imgBtnWrong2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBtnWrong2.setBackground(redBG);
                 getGameResult();
                 ivWrong2.setVisibility(View.VISIBLE);
                 actionStack.push(new NormalGame4Activity.Action(-2, false));
@@ -176,7 +171,6 @@ public class NormalGame4Activity extends AppCompatActivity {
         imgBtnWrong3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBtnWrong3.setBackground(redBG);
                 getGameResult();
                 ivWrong3.setVisibility(View.VISIBLE);
                 actionStack.push(new NormalGame4Activity.Action(-3, false));
@@ -186,7 +180,6 @@ public class NormalGame4Activity extends AppCompatActivity {
         imgBtnWrong4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBtnWrong4.setBackground(redBG);
                 getGameResult();
                 ivWrong4.setVisibility(View.VISIBLE);
                 actionStack.push(new NormalGame4Activity.Action(-4, false));
@@ -196,7 +189,6 @@ public class NormalGame4Activity extends AppCompatActivity {
         imgBtnWrong5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBtnWrong5.setBackground(redBG);
                 getGameResult();
                 ivWrong5.setVisibility(View.VISIBLE);
                 actionStack.push(new NormalGame4Activity.Action(-5, false));
@@ -206,7 +198,6 @@ public class NormalGame4Activity extends AppCompatActivity {
         imgBtnWrong6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBtnWrong6.setBackground(redBG);
                 getGameResult();
                 ivWrong6.setVisibility(View.VISIBLE);
                 actionStack.push(new NormalGame4Activity.Action(-6, false));
@@ -239,6 +230,15 @@ public class NormalGame4Activity extends AppCompatActivity {
                     undoClickable();
                     buttonClick.start();
                 }
+            }
+        });
+
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(NormalGame4Activity.this, NormalGame5Activity.class);
+                startActivity(intent);
+                buttonClick.start();
             }
         });
 
@@ -296,6 +296,7 @@ public class NormalGame4Activity extends AppCompatActivity {
             btnEndGame.setClickable(false);
             btnEndGame.setBackgroundColor(Color.WHITE);
             btnUndo.setVisibility(View.GONE);
+            btnNext.setVisibility(View.VISIBLE);
             cheer.start();
         } else {
             btnEndGame.setText(tryAgain);

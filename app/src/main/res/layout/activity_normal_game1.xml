@@ -369,18 +369,43 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/buttonBack"
-        android:layout_width="260dp"
-        android:layout_height="64dp"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="15dp"
-        android:layout_weight="0.001"
-        android:background="@drawable/orange_btn"
-        android:text="@string/back"
-        android:textColor="@color/black"
-        android:textSize="27dp"
-        app:backgroundTint="@null" />
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="260dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/orange_btn"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="27dp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="260dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/orange_btn"
+            android:text="@string/next"
+            android:textColor="@color/black"
+            android:textSize="27dp"
+            android:visibility="gone"
+            app:backgroundTint="@null" />
+    </LinearLayout>
 
     <View
         android:layout_width="match_parent"

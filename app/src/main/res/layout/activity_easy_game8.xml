@@ -218,18 +218,20 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/buttonBack"
-        android:layout_width="260dp"
-        android:layout_height="64dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="15dp"
-        android:layout_weight="0"
-        android:background="@drawable/orange_btn"
-        android:text="@string/back"
-        android:textColor="@color/black"
-        android:textSize="27dp"
-        app:backgroundTint="@null" />
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="260dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/orange_btn"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="27dp"
+            app:backgroundTint="@null" />
+
 
     <View
         android:layout_width="match_parent"
